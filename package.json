@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "node --max-old-space-size=4096 node_modules/.bin/vitepress build docs",
+    "build:win": "set NODE_OPTIONS=--max-old-space-size=4096 && vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "keywords": [
