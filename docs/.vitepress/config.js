@@ -76,18 +76,7 @@ export default defineConfig({
       }
     },
     build: {
-      chunkSizeWarningLimit: 1000,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            'vue-vendor': ['vue'],
-            'vitepress-vendor': ['vitepress']
-          }
-        }
-      }
-    },
-    ssr: {
-      noExternal: ['vitepress']
+      chunkSizeWarningLimit: 1000
     }
   }
 })
