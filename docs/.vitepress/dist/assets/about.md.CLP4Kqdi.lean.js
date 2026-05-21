@@ -1,0 +1,1 @@
+import{c as e,Q as t,j as r,m as o}from"./chunks/framework.DOi4mjdC.js";const p=JSON.parse('{"title":"关于新文艺","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),i={name:"about.md"};function l(n,a,h,s,d,c){return t(),r("div",null,[...a[0]||(a[0]=[o("",26)])])}const b=e(i,[["render",l]]);export{p as __pageData,b as default};
