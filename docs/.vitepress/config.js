@@ -6,7 +6,6 @@ export default defineConfig({
   lang: 'zh-CN',
   lastUpdated: false,
   ignoreDeadLinks: true,
-  cleanUrls: true,
 
   themeConfig: {
     logo: { src: '/logo.svg', alt: '新文艺' },
