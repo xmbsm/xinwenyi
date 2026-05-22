@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '新文艺',
+  title: '',
   description: '古典文学垂直类内容展示与阅读平台',
   lang: 'zh-CN',
   lastUpdated: false,
@@ -93,7 +93,14 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'keywords', content: '古典文学,四大名著,诗词,小说,传统文化' }],
-    ['meta', { name: 'description', content: '免费开放古典文学优质内容，包括四大名著、经典古诗词、明清小说等' }]
+    ['meta', { name: 'description', content: '免费开放古典文学优质内容，包括四大名著、经典古诗词、明清小说等' }],
+    ['script', {}, `var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?184101e7ba5f25ed0aef3cbba33aed64";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();`]
   ],
 
   vite: {

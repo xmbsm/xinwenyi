@@ -6,22 +6,9 @@ const categories = [
   { id: 'tangshi', name: '唐诗' },
   { id: 'songci', name: '宋词' },
   { id: 'yuanqu', name: '元曲' },
-  { id: 'chuci', name: '楚辞' },
   { id: 'shijing', name: '诗经' },
-  { id: 'mingshi', name: '明诗' },
-  { id: 'qingshi', name: '清诗' },
-  { id: 'qiyan-jueju', name: '七言绝句' },
-  { id: 'qiyan-gushi', name: '七言古诗' },
-  { id: 'xushishi', name: '叙事诗' },
-  { id: 'yuefu', name: '乐府' },
-  { id: 'wuyan-lvshi', name: '五言律诗' },
-  { id: 'wuyan-jueju', name: '五言绝句' },
-  { id: 'qiyan-lvshi', name: '七言律诗' },
-  { id: 'wuyan-gushi', name: '五言古诗' },
-  { id: 'gexingti', name: '歌行体' },
-  { id: 'gutishi', name: '古体诗' },
-  { id: 'hanweishi', name: '汉魏诗' },
-  { id: 'sanqu', name: '散曲' }
+  { id: 'chuci', name: '楚辞' },
+  { id: 'hanweishi', name: '汉魏诗' }
 ]
 
 const poems = [
@@ -806,6 +793,106 @@ const poems = [
     tags: ['散曲', '写景']
   },
   {
+    id: 'yuanqu/23',
+    title: '天净沙·春',
+    author: '白朴',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '春山暖日和风，阑干楼阁帘栊，杨柳秋千院中。啼莺舞燕，小桥流水飞红。',
+    tags: ['散曲', '春景']
+  },
+  {
+    id: 'yuanqu/24',
+    title: '天净沙·夏',
+    author: '白朴',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '云收雨过波添，楼高水冷瓜甜，绿树阴垂画檐。纱厨藤簟，玉人罗扇轻缣。',
+    tags: ['散曲', '夏景']
+  },
+  {
+    id: 'yuanqu/25',
+    title: '天净沙·冬',
+    author: '白朴',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '一声画角谯门，半庭新月黄昏，雪里山前水滨。竹篱茅舍，淡烟衰草孤村。',
+    tags: ['散曲', '冬景']
+  },
+  {
+    id: 'yuanqu/26',
+    title: '沉醉东风·秋景',
+    author: '卢挚',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '挂绝壁松枯倒倚，落残霞孤鹜齐飞。四围不尽山，一望无穷水。',
+    tags: ['散曲', '秋景']
+  },
+  {
+    id: 'yuanqu/27',
+    title: '寿阳曲·潇湘夜雨',
+    author: '马致远',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '渔灯暗，客梦回。一声声滴人心碎。孤舟五更家万里，是离人几行情泪。',
+    tags: ['散曲', '夜雨']
+  },
+  {
+    id: 'yuanqu/28',
+    title: '寿阳曲·烟寺晚钟',
+    author: '马致远',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '寒烟细，古寺清，近黄昏礼佛人静。顺西风晚钟三四声，怎生教老僧禅定？',
+    tags: ['散曲', '暮钟']
+  },
+  {
+    id: 'yuanqu/29',
+    title: '拨不断·菊花开',
+    author: '马致远',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '菊花开，正归来。伴虎溪僧鹤林友龙山客，似杜工部陶渊明李太白。',
+    tags: ['散曲', '隐逸']
+  },
+  {
+    id: 'yuanqu/30',
+    title: '清江引·秋居',
+    author: '吴西逸',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '白雁乱飞秋似雪，清露生凉夜。扫却石边云，醉踏松根月。星斗满天人睡也。',
+    tags: ['散曲', '秋居']
+  },
+  {
+    id: 'yuanqu/31',
+    title: '殿前欢·懒云窝',
+    author: '阿里西瑛',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '懒云窝，醒时诗酒醉时歌。瑶琴不理抛书卧，无梦南柯。',
+    tags: ['散曲', '隐逸']
+  },
+  {
+    id: 'yuanqu/32',
+    title: '水仙子·寻梅',
+    author: '乔吉',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '冬前冬后几村庄，溪北溪南两履霜，树头树底孤山上。冷风来何处香？',
+    tags: ['散曲', '咏梅']
+  },
+  {
     id: 'shijing/1',
     title: '关雎',
     author: '佚名',
@@ -1164,6 +1251,106 @@ const poems = [
     categoryName: '楚辞',
     content: '悲时俗之迫阨兮，愿轻举而远游。质菲薄而无因兮，焉讬乘而上浮？',
     tags: ['长篇', '游仙']
+  },
+  {
+    id: 'hanweishi/1',
+    title: '短歌行',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '对酒当歌，人生几何？譬如朝露，去日苦多。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/2',
+    title: '观沧海',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '东临碣石，以观沧海。水何澹澹，山岛竦峙。',
+    tags: ['四言诗', '山水']
+  },
+  {
+    id: 'hanweishi/3',
+    title: '龟虽寿',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '神龟虽寿，犹有竟时。腾蛇乘雾，终为土灰。',
+    tags: ['四言诗', '抒怀']
+  },
+  {
+    id: 'hanweishi/4',
+    title: '蒿里行',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '关东有义士，兴兵讨群凶。初期会盟津，乃心在咸阳。',
+    tags: ['乐府', '叙事']
+  },
+  {
+    id: 'hanweishi/5',
+    title: '燕歌行',
+    author: '曹丕',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '秋风萧瑟天气凉，草木摇落露为霜。群燕辞归鹄南翔。',
+    tags: ['七言诗', '秋思']
+  },
+  {
+    id: 'hanweishi/6',
+    title: '白马篇',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '白马饰金羁，连翩西北驰。借问谁家子，幽并游侠儿。',
+    tags: ['乐府', '游侠']
+  },
+  {
+    id: 'hanweishi/7',
+    title: '七步诗',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '煮豆燃豆萁，豆在釜中泣。本是同根生，相煎何太急？',
+    tags: ['五言诗', '讽喻']
+  },
+  {
+    id: 'hanweishi/8',
+    title: '洛神赋',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '翩若惊鸿，婉若游龙。荣曜秋菊，华茂春松。',
+    tags: ['辞赋', '爱情']
+  },
+  {
+    id: 'hanweishi/9',
+    title: '饮马长城窟行',
+    author: '陈琳',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '青青河畔草，绵绵思远道。远道不可思，宿昔梦见之。',
+    tags: ['乐府', '思妇']
+  },
+  {
+    id: 'hanweishi/10',
+    title: '古诗十九首·行行重行行',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '行行重行行，与君生别离。相去万余里，各在天一涯。',
+    tags: ['五言诗', '离别']
   }
 ]
 
@@ -1227,7 +1414,7 @@ function getCoverColor(title) {
         <button
           v-for="cat in categories"
           :key="cat.id"
-          class="category-item"
+          class="category-btn"
           :class="{ active: activeCategory === cat.id }"
           @click="activeCategory = cat.id"
         >

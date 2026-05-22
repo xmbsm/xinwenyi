@@ -50,7 +50,8 @@
         <div class="modal-tag">{{ randomBook.category }}</div>
         <h2 class="modal-title">{{ randomBook.title }}</h2>
         <p class="modal-meta">{{ randomBook.dynasty }} · {{ randomBook.author }}</p>
-        <div class="modal-desc">{{ randomBook.description }}</div>
+        <p v-if="randomBook.quote" class="modal-quote">{{ randomBook.quote }}</p>
+        <div v-if="randomBook.description" class="modal-desc">{{ randomBook.description }}</div>
         <a :href="randomBook.link" class="modal-read-btn">阅读全文 →</a>
       </div>
     </div>
@@ -71,14 +72,15 @@ let particles = []
 let time = 0
 
 import { books as allBooks } from '../data/books.js'
-import { tangshiPoems, songciPoems, yuanquPoems, shijingPoems, chuciPoems } from '../data/poems.js'
+import { tangshiPoems, songciPoems, yuanquPoems, shijingPoems, chuciPoems, hanweishiPoems } from '../data/poems.js'
 
 const allPoems = [
   ...tangshiPoems.map(p => ({ ...p, category: 'tangshi', categoryName: '唐诗', link: `/books/shici/tangshi/${p.id}` })),
   ...songciPoems.map(p => ({ ...p, category: 'songci', categoryName: '宋词', link: `/books/shici/songci/${p.id}` })),
   ...yuanquPoems.map(p => ({ ...p, category: 'yuanqu', categoryName: '元曲', link: `/books/shici/yuanqu/${p.id}` })),
   ...shijingPoems.map(p => ({ ...p, category: 'shijing', categoryName: '诗经', link: `/books/shici/shijing/${p.id}` })),
-  ...chuciPoems.map(p => ({ ...p, category: 'chuci', categoryName: '楚辞', link: `/books/shici/chuci/${p.id}` }))
+  ...chuciPoems.map(p => ({ ...p, category: 'chuci', categoryName: '楚辞', link: `/books/shici/chuci/${p.id}` })),
+  ...hanweishiPoems.map(p => ({ ...p, category: 'hanweishi', categoryName: '汉魏诗', link: `/books/shici/hanweishi/${p.id}` }))
 ]
 
 const totalWorks = allBooks.length + allPoems.length
@@ -193,7 +195,8 @@ function showRandomBook() {
       author: poem.author,
       dynasty: poem.dynasty,
       category: poem.categoryName,
-      description: poem.desc,
+      quote: poem.quote,
+      description: '',
       link: poem.link
     }
   } else {
@@ -203,6 +206,7 @@ function showRandomBook() {
       author: book.author,
       dynasty: book.dynasty,
       category: book.categoryName || categoryMap[book.category] || book.category,
+      quote: '',
       description: book.desc,
       link: `/books/${book.category}/${book.id}`
     }
@@ -616,6 +620,37 @@ onMounted(() => {
 
 .dark .modal-meta {
   color: #777;
+}
+
+.modal-quote {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #85662e;
+  font-style: italic;
+  margin-bottom: 16px;
+  padding: 12px 20px;
+  background: #faf8f5;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-quote::before {
+  content: '"';
+  font-size: 28px;
+  color: #ad8e56;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  line-height: 1;
+}
+
+.dark .modal-quote {
+  color: #d4af37;
+  background: #2a2a2a;
+}
+
+.dark .modal-quote::before {
+  color: #c4a35a;
 }
 
 .modal-desc {

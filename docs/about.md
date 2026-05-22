@@ -1,4 +1,4 @@
-# 关于新文艺
+# 关于
 
 ## 站点介绍
 
@@ -42,8 +42,8 @@
 
 如有任何问题或建议，欢迎通过以下方式联系我们：
 
-- 邮箱：contact@xinwenyi.com
-- GitHub：https://github.com/xinwenyi
+- 邮箱：1@xinwenyi.com
+- GitHub：https://github.com/xmbsm/xinwenyi
 
 ## 致谢
 
