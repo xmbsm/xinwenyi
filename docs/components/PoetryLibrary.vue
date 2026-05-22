@@ -1414,7 +1414,7 @@ function getCoverColor(title) {
         <button
           v-for="cat in categories"
           :key="cat.id"
-          class="category-btn"
+          class="category-item"
           :class="{ active: activeCategory === cat.id }"
           @click="activeCategory = cat.id"
         >

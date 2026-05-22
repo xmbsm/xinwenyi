@@ -593,11 +593,16 @@ onMounted(() => {
 .modal-tag {
   display: inline-block;
   padding: 6px 20px;
-  background: #ad8e56;
-  color: #fff;
+  background: #f5f0eb;
+  color: #85662e;
   font-size: 13px;
   border-radius: 20px;
   margin-bottom: 16px;
+}
+
+.dark .modal-tag {
+  background: #2a2a2a;
+  color: #d4af37;
 }
 
 .modal-title {
@@ -605,6 +610,9 @@ onMounted(() => {
   font-weight: 600;
   color: #333;
   margin-bottom: 8px;
+  margin-top: 0;
+  border-top: none !important;
+  padding-top: 0 !important;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 

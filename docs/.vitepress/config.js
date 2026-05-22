@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '',
+  title: '新文艺',
   description: '古典文学垂直类内容展示与阅读平台',
+  titleTemplate: ':title | 新文艺',
   lang: 'zh-CN',
   lastUpdated: false,
   ignoreDeadLinks: true,

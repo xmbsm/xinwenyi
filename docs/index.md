@@ -1,6 +1,7 @@
 ---
 layout: home
 title: 新文艺 | 理想生活杂志
+titleTemplate: false
 ---
 
 <script setup>

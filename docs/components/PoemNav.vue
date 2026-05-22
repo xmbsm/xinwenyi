@@ -89,6 +89,18 @@ const poemLists = {
     { id: 6, title: '九歌·东君' },
     { id: 7, title: '九章·橘颂' },
     { id: 8, title: '招魂' }
+  ],
+  hanweishi: [
+    { id: 1, title: '短歌行' },
+    { id: 2, title: '观沧海' },
+    { id: 3, title: '龟虽寿' },
+    { id: 4, title: '蒿里行' },
+    { id: 5, title: '燕歌行' },
+    { id: 6, title: '白马篇' },
+    { id: 7, title: '七步诗' },
+    { id: 8, title: '洛神赋' },
+    { id: 9, title: '饮马长城窟行' },
+    { id: 10, title: '古诗十九首·行行重行行' }
   ]
 }
 
