@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '新文艺 | 理想生活杂志',
+  title: '新文艺',
   description: '古典文学垂直类内容展示与阅读平台',
   lang: 'zh-CN',
   lastUpdated: false,
@@ -21,20 +21,47 @@ export default defineConfig({
     ],
 
     search: {
-      provider: 'local',
+      provider: 'algolia',
       options: {
+        appId: 'YOUR_APP_ID',
+        apiKey: 'YOUR_SEARCH_API_KEY',
+        indexName: 'xinwenyi',
+        placeholder: '搜索文档',
         translations: {
           button: {
             buttonText: '搜索',
             buttonAriaLabel: '搜索'
           },
           modal: {
-            noResultsText: '未找到相关结果',
-            resetButtonTitle: '清除',
+            searchBox: {
+              resetButtonTitle: '清除查询',
+              resetButtonAriaLabel: '清除查询',
+              cancelButtonText: '取消',
+              cancelButtonAriaLabel: '取消'
+            },
+            startScreen: {
+              recentSearchesTitle: '最近搜索',
+              noRecentSearchesText: '没有最近搜索',
+              saveRecentSearchButtonTitle: '保存到最近搜索',
+              removeRecentSearchButtonTitle: '从最近搜索中移除',
+              favoriteSearchesTitle: '收藏',
+              removeFavoriteSearchButtonTitle: '从收藏中移除'
+            },
+            errorScreen: {
+              titleText: '无法获取结果',
+              helpText: '请检查你的网络连接'
+            },
             footer: {
               selectText: '选择',
               navigateText: '切换',
-              closeText: '关闭'
+              closeText: '关闭',
+              searchByText: '由 Algolia 提供搜索'
+            },
+            noResultsScreen: {
+              noResultsText: '未找到相关结果',
+              suggestedQueryText: '你可以尝试搜索',
+              reportMissingResultsText: '认为应该有结果？',
+              reportMissingResultsLinkText: '反馈给我们'
             }
           }
         }

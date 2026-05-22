@@ -10,7 +10,25 @@ export const tangshiPoems = [
   { id: 9, title: '枫桥夜泊' },
   { id: 10, title: '出塞' },
   { id: 11, title: '凉州词' },
-  { id: 12, title: '送元二使安西' }
+  { id: 12, title: '送元二使安西' },
+  { id: 13, title: '登幽州台歌' },
+  { id: 14, title: '悯农' },
+  { id: 15, title: '游子吟' },
+  { id: 16, title: '过故人庄' },
+  { id: 17, title: '山居秋暝' },
+  { id: 18, title: '使至塞上' },
+  { id: 19, title: '送杜少府之任蜀州' },
+  { id: 20, title: '黄鹤楼' },
+  { id: 21, title: '别董大' },
+  { id: 22, title: '绝句' },
+  { id: 23, title: '望岳' },
+  { id: 24, title: '登高' },
+  { id: 25, title: '琵琶行' },
+  { id: 26, title: '长恨歌' },
+  { id: 27, title: '将进酒' },
+  { id: 28, title: '行路难' },
+  { id: 29, title: '月下独酌' },
+  { id: 30, title: '夜雨寄北' }
 ]
 
 export const songciPoems = [
@@ -25,7 +43,21 @@ export const songciPoems = [
   { id: 9, title: '破阵子·为陈同甫赋壮词以寄之' },
   { id: 10, title: '江城子·密州出猎' },
   { id: 11, title: '满江红·写怀' },
-  { id: 12, title: '卜算子·咏梅' }
+  { id: 12, title: '卜算子·咏梅' },
+  { id: 13, title: '永遇乐·京口北固亭怀古' },
+  { id: 14, title: '蝶恋花·伫倚危楼风细细' },
+  { id: 15, title: '浣溪沙·一曲新词酒一杯' },
+  { id: 16, title: '鹊桥仙·纤云弄巧' },
+  { id: 17, title: '苏幕遮·怀旧' },
+  { id: 18, title: '西江月·夜行黄沙道中' },
+  { id: 19, title: '定风波·莫听穿林打叶声' },
+  { id: 20, title: '醉花阴·薄雾浓云愁永昼' },
+  { id: 21, title: '渔家傲·秋思' },
+  { id: 22, title: '扬州慢·淮左名都' },
+  { id: 23, title: '念奴娇·过洞庭' },
+  { id: 24, title: '贺新郎·甚矣吾衰矣' },
+  { id: 25, title: '兰陵王·柳' },
+  { id: 26, title: '踏莎行·郴州旅舍' }
 ]
 
 export const yuanquPoems = [
@@ -40,7 +72,17 @@ export const yuanquPoems = [
   { id: 9, title: '山坡羊·骊山怀古' },
   { id: 10, title: '清江引·秋怀' },
   { id: 11, title: '殿前欢·对菊自叹' },
-  { id: 12, title: '水仙子·咏江南' }
+  { id: 12, title: '水仙子·咏江南' },
+  { id: 13, title: '折桂令·春情' },
+  { id: 14, title: '人月圆·山中书事' },
+  { id: 15, title: '拨不断·叹寒儒' },
+  { id: 16, title: '落梅风·人初静' },
+  { id: 17, title: '塞鸿秋·浔阳即景' },
+  { id: 18, title: '卖花声·怀古' },
+  { id: 19, title: '凭阑人·寄征衣' },
+  { id: 20, title: '折桂令·叹世' },
+  { id: 21, title: '水仙子·夜雨' },
+  { id: 22, title: '普天乐·西山夕照' }
 ]
 
 export const shijingPoems = [
@@ -53,7 +95,17 @@ export const shijingPoems = [
   { id: 7, title: '静女' },
   { id: 8, title: '木瓜' },
   { id: 9, title: '硕鼠' },
-  { id: 10, title: '伐檀' }
+  { id: 10, title: '伐檀' },
+  { id: 11, title: '子衿' },
+  { id: 12, title: '击鼓' },
+  { id: 13, title: '无衣' },
+  { id: 14, title: '月出' },
+  { id: 15, title: '汉广' },
+  { id: 16, title: '芣苢' },
+  { id: 17, title: '卷耳' },
+  { id: 18, title: '摽有梅' },
+  { id: 19, title: '柏舟' },
+  { id: 20, title: '绿衣' }
 ]
 
 export const chuciPoems = [
@@ -64,5 +116,13 @@ export const chuciPoems = [
   { id: 5, title: '九歌·国殇' },
   { id: 6, title: '九歌·东君' },
   { id: 7, title: '九章·橘颂' },
-  { id: 8, title: '招魂' }
+  { id: 8, title: '招魂' },
+  { id: 9, title: '九歌·湘君' },
+  { id: 10, title: '九歌·河伯' },
+  { id: 11, title: '九章·涉江' },
+  { id: 12, title: '卜居' },
+  { id: 13, title: '九歌·大司命' },
+  { id: 14, title: '九歌·少司命' },
+  { id: 15, title: '九章·哀郢' },
+  { id: 16, title: '远游' }
 ]
