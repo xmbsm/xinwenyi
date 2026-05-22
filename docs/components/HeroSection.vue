@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="hero-stats">
-        共收录 <span class="stats-num">278</span> 部书籍，<a href="/library" class="stats-link">查看书库 →</a>
+        共收录 <span class="stats-num">{{ totalWorks }}</span> 部经典，<a href="/library" class="stats-link">查看书库 →</a>
       </div>
       <div class="hero-hint">
         <span class="hint-icon">✨</span>
@@ -71,17 +71,17 @@ let particles = []
 let time = 0
 
 import { books as allBooks } from '../data/books.js'
+import { tangshiPoems, songciPoems, yuanquPoems, shijingPoems, chuciPoems } from '../data/poems.js'
 
 const allPoems = [
-  { id: 'tangshi/1', title: '静夜思', author: '李白', dynasty: '唐', category: 'tangshi', categoryName: '唐诗', desc: '床前明月光，疑是地上霜。举头望明月，低头思故乡。', link: '/books/shici/tangshi/1' },
-  { id: 'tangshi/2', title: '春晓', author: '孟浩然', dynasty: '唐', category: 'tangshi', categoryName: '唐诗', desc: '春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。', link: '/books/shici/tangshi/2' },
-  { id: 'tangshi/3', title: '登鹳雀楼', author: '王之涣', dynasty: '唐', category: 'tangshi', categoryName: '唐诗', desc: '白日依山尽，黄河入海流。欲穷千里目，更上一层楼。', link: '/books/shici/tangshi/3' },
-  { id: 'songci/1', title: '念奴娇·赤壁怀古', author: '苏轼', dynasty: '宋', category: 'songci', categoryName: '宋词', desc: '大江东去，浪淘尽，千古风流人物。', link: '/books/shici/songci/1' },
-  { id: 'songci/2', title: '水调歌头·明月几时有', author: '苏轼', dynasty: '宋', category: 'songci', categoryName: '宋词', desc: '明月几时有？把酒问青天。', link: '/books/shici/songci/2' },
-  { id: 'yuanqu/1', title: '天净沙·秋思', author: '马致远', dynasty: '元', category: 'yuanqu', categoryName: '元曲', desc: '枯藤老树昏鸦，小桥流水人家，古道西风瘦马。', link: '/books/shici/yuanqu/1' },
-  { id: 'shijing/1', title: '关雎', author: '佚名', dynasty: '先秦', category: 'shijing', categoryName: '诗经', desc: '关关雎鸠，在河之洲。窈窕淑女，君子好逑。', link: '/books/shici/shijing/1' },
-  { id: 'chuci/1', title: '离骚', author: '屈原', dynasty: '战国', category: 'chuci', categoryName: '楚辞', desc: '帝高阳之苗裔兮，朕皇考曰伯庸。', link: '/books/shici/chuci/1' }
+  ...tangshiPoems.map(p => ({ ...p, category: 'tangshi', categoryName: '唐诗', link: `/books/shici/tangshi/${p.id}` })),
+  ...songciPoems.map(p => ({ ...p, category: 'songci', categoryName: '宋词', link: `/books/shici/songci/${p.id}` })),
+  ...yuanquPoems.map(p => ({ ...p, category: 'yuanqu', categoryName: '元曲', link: `/books/shici/yuanqu/${p.id}` })),
+  ...shijingPoems.map(p => ({ ...p, category: 'shijing', categoryName: '诗经', link: `/books/shici/shijing/${p.id}` })),
+  ...chuciPoems.map(p => ({ ...p, category: 'chuci', categoryName: '楚辞', link: `/books/shici/chuci/${p.id}` }))
 ]
+
+const totalWorks = allBooks.length + allPoems.length
 
 const categoryMap = {
   'mingzhu': '名著',

@@ -2,16 +2,52 @@ import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import PoemNav from '../../components/PoemNav.vue'
 import PoemAuthor from '../../components/PoemAuthor.vue'
+import BookNav from '../../components/BookNav.vue'
+import BookLayout from './BookLayout.vue'
 
 export default {
   extends: DefaultTheme,
+  Layout: BookLayout,
   enhanceApp({ app, router, siteData }) {
     app.component('PoemNav', PoemNav)
     app.component('PoemAuthor', PoemAuthor)
+    app.component('BookNav', BookNav)
     if (typeof window !== 'undefined') {
       initReadingToolbar()
+      initBookPageClass()
     }
   }
+}
+
+function initBookPageClass() {
+  function updateClass() {
+    const path = location.pathname
+    const isBookIntro = /\/books\/(mingzhu|xiaoshuo|shenmo|gongan)\/[^/]+$/.test(path)
+    const isBookChapter = /\/books\/(mingzhu|xiaoshuo|shenmo|gongan)\/[^/]+\/ch\d+/.test(path)
+    document.body.classList.remove('book-intro-page', 'book-chapter-page')
+    if (isBookIntro) {
+      document.body.classList.add('book-intro-page')
+    } else if (isBookChapter) {
+      document.body.classList.add('book-chapter-page')
+    }
+  }
+  updateClass()
+  setInterval(() => {
+    const path = location.pathname
+    const isBookIntro = /\/books\/(mingzhu|xiaoshuo|shenmo|gongan)\/[^/]+$/.test(path)
+    const isBookChapter = /\/books\/(mingzhu|xiaoshuo|shenmo|gongan)\/[^/]+\/ch\d+/.test(path)
+    const hasIntro = document.body.classList.contains('book-intro-page')
+    const hasChapter = document.body.classList.contains('book-chapter-page')
+    if (isBookIntro && !hasIntro) {
+      document.body.classList.remove('book-chapter-page')
+      document.body.classList.add('book-intro-page')
+    } else if (isBookChapter && !hasChapter) {
+      document.body.classList.remove('book-intro-page')
+      document.body.classList.add('book-chapter-page')
+    } else if (!isBookIntro && !isBookChapter && (hasIntro || hasChapter)) {
+      document.body.classList.remove('book-intro-page', 'book-chapter-page')
+    }
+  }, 300)
 }
 
 function initReadingToolbar() {

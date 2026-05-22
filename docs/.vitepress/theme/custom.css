@@ -26,6 +26,26 @@
   --reader-line-height: 1.8;
 }
 
+/* 首页滚动指示器动画 */
+@keyframes wheelScroll {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(8px);
+    opacity: 0.3;
+  }
+  60% {
+    transform: translateY(-2px);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .dark {
   --vp-c-brand-1: #d4af37;
   --vp-c-brand-2: #ad8e56;
@@ -123,6 +143,25 @@
 
 /* 但列表项内的段落保持默认 */
 .vp-doc li p {
+  text-indent: 2em;
+}
+
+/* 书库书籍介绍页面去掉所有首行缩进 */
+body.book-intro-page .vp-doc div p,
+body.book-intro-page .vp-doc li p,
+body.book-intro-page .vp-doc ul li p,
+body.book-intro-page .vp-doc ol li p {
+  text-indent: 0 !important;
+}
+
+/* 书库书籍介绍页面正文默认字体大小 16px */
+body.book-intro-page .vp-doc p,
+body.book-intro-page .vp-doc li {
+  font-size: 16px;
+}
+
+/* 书库章节阅读页正文首行缩进两个文字 */
+body.book-chapter-page .vp-doc p {
   text-indent: 2em;
 }
 
@@ -321,6 +360,7 @@
   margin: 16px 0 8px 0;
   padding-bottom: 4px;
   border-bottom: 1px solid var(--vp-c-divider);
+  text-indent: 0;
 }
 
 .toc-grid {
@@ -337,6 +377,7 @@
   line-height: 1.6;
   transition: all 0.2s;
   border-bottom: 1px solid var(--vp-c-divider);
+  text-indent: 0;
 }
 
 .toc-grid a:last-child {
@@ -353,7 +394,7 @@
 .reading-toolbar {
   position: fixed;
   right: 24px;
-  bottom: 100px;
+  bottom: 20px;
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -389,7 +430,7 @@
 .settings-panel {
   position: fixed;
   right: 84px;
-  bottom: 100px;
+  bottom: 20px;
   width: 280px;
   max-height: 420px;
   background: var(--vp-c-bg-elv, #fff);
@@ -551,7 +592,7 @@
 
   .reading-toolbar {
     right: 12px;
-    bottom: 80px;
+    bottom: 20px;
   }
 
   .toolbar-btn {
@@ -562,7 +603,7 @@
   .toc-panel,
   .settings-panel {
     right: 60px;
-    bottom: 80px;
+    bottom: 20px;
     width: 240px;
     max-height: 360px;
   }
