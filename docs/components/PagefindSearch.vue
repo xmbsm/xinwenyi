@@ -113,6 +113,10 @@ const poemCategoryMap = {
 }
 
 onMounted(() => {
+  // 读取 URL 参数中的搜索词
+  const urlParams = new URLSearchParams(window.location.search)
+  const q = urlParams.get('q')
+
   // 尝试加载 Pagefind
   const loadPagefind = async () => {
     try {
@@ -127,10 +131,11 @@ onMounted(() => {
       script.src = '/pagefind/pagefind-ui.js'
       script.type = 'text/javascript'
       script.onload = () => {
-        initPagefindSearch()
+        initPagefindSearch(q)
       }
       script.onerror = () => {
         showFallback.value = true
+        if (q) doSearch(q)
       }
       document.head.appendChild(script)
 
@@ -141,20 +146,22 @@ onMounted(() => {
       document.head.appendChild(link)
     } catch (e) {
       showFallback.value = true
+      if (q) doSearch(q)
     }
   }
 
-  const initPagefindSearch = () => {
+  const initPagefindSearch = (query) => {
     const container = document.getElementById('pagefind-search')
     if (!container || !window.PagefindUI) {
       showFallback.value = true
+      if (query) doSearch(query)
       return
     }
 
     // 隐藏 fallback 搜索
     showFallback.value = false
 
-    new window.PagefindUI({
+    const pagefindUI = new window.PagefindUI({
       element: '#pagefind-search',
       showSubResults: true,
       showEmptyFilters: false,
@@ -172,6 +179,13 @@ onMounted(() => {
         searching: '正在搜索...'
       }
     })
+
+    // 如果有搜索词，自动触发搜索
+    if (query) {
+      setTimeout(() => {
+        pagefindUI.triggerSearch(query)
+      }, 100)
+    }
   }
 
   loadPagefind()
