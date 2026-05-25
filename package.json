@@ -7,6 +7,7 @@
     "dev": "vitepress dev docs",
     "build": "node --max-old-space-size=4096 node_modules/.bin/vitepress build docs",
     "build:win": "set NODE_OPTIONS=--max-old-space-size=4096 && vitepress build docs",
+    "build:pagefind": "node scripts/build-with-pagefind.js",
     "preview": "vitepress preview docs"
   },
   "keywords": [

@@ -4,7 +4,7 @@ layout: page
 ---
 
 <script setup>
-import PoetryLibrary from '../components/PoetryLibrary.vue'
+import PoetryLibrary from './components/PoetryLibrary.vue'
 </script>
 
 <PoetryLibrary />

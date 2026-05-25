@@ -313,6 +313,106 @@ const poems = [
     tags: ['七言绝句', '思念']
   },
   {
+    id: 'tangshi/31',
+    title: '无题',
+    author: '李商隐',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '相见时难别亦难，东风无力百花残。春蚕到死丝方尽，蜡炬成灰泪始干。',
+    tags: ['七言律诗', '爱情']
+  },
+  {
+    id: 'tangshi/32',
+    title: '锦瑟',
+    author: '李商隐',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '锦瑟无端五十弦，一弦一柱思华年。庄生晓梦迷蝴蝶，望帝春心托杜鹃。',
+    tags: ['七言律诗', '感怀']
+  },
+  {
+    id: 'tangshi/33',
+    title: '登鹳雀楼',
+    author: '王之涣',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '白日依山尽，黄河入海流。欲穷千里目，更上一层楼。',
+    tags: ['五言绝句', '励志']
+  },
+  {
+    id: 'tangshi/34',
+    title: '相思',
+    author: '王维',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '红豆生南国，春来发几枝。愿君多采撷，此物最相思。',
+    tags: ['五言绝句', '相思']
+  },
+  {
+    id: 'tangshi/35',
+    title: '江雪',
+    author: '柳宗元',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。',
+    tags: ['五言绝句', '冬景']
+  },
+  {
+    id: 'tangshi/36',
+    title: '乌衣巷',
+    author: '刘禹锡',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '朱雀桥边野草花，乌衣巷口夕阳斜。旧时王谢堂前燕，飞入寻常百姓家。',
+    tags: ['七言绝句', '怀古']
+  },
+  {
+    id: 'tangshi/37',
+    title: '竹枝词',
+    author: '刘禹锡',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '杨柳青青江水平，闻郎江上踏歌声。东边日出西边雨，道是无晴却有晴。',
+    tags: ['七言绝句', '民歌']
+  },
+  {
+    id: 'tangshi/38',
+    title: '枫桥夜泊',
+    author: '张继',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。',
+    tags: ['七言绝句', '羁旅']
+  },
+  {
+    id: 'tangshi/39',
+    title: '早发白帝城',
+    author: '李白',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '朝辞白帝彩云间，千里江陵一日还。两岸猿声啼不住，轻舟已过万重山。',
+    tags: ['七言绝句', '行旅']
+  },
+  {
+    id: 'tangshi/40',
+    title: '望庐山瀑布',
+    author: '李白',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。',
+    tags: ['七言绝句', '山水']
+  },
+  {
     id: 'songci/1',
     title: '水调歌头·明月几时有',
     author: '苏轼',
@@ -571,6 +671,106 @@ const poems = [
     categoryName: '宋词',
     content: '雾失楼台，月迷津渡。桃源望断无寻处。可堪孤馆闭春寒，杜鹃声里斜阳暮。',
     tags: ['婉约派', '羁旅']
+  },
+  {
+    id: 'songci/27',
+    title: '江城子·乙卯正月二十日夜记梦',
+    author: '苏轼',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。',
+    tags: ['豪放派', '悼亡']
+  },
+  {
+    id: 'songci/28',
+    title: '蝶恋花·花褪残红青杏小',
+    author: '苏轼',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '花褪残红青杏小。燕子飞时，绿水人家绕。枝上柳绵吹又少，天涯何处无芳草。',
+    tags: ['婉约派', '春景']
+  },
+  {
+    id: 'songci/29',
+    title: '如梦令·常记溪亭日暮',
+    author: '李清照',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '常记溪亭日暮，沉醉不知归路。兴尽晚回舟，误入藕花深处。',
+    tags: ['婉约派', '游赏']
+  },
+  {
+    id: 'songci/30',
+    title: '一剪梅·舟过吴江',
+    author: '蒋捷',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '一片春愁待酒浇。江上舟摇，楼上帘招。秋娘渡与泰娘桥，风又飘飘，雨又萧萧。',
+    tags: ['婉约派', '春愁']
+  },
+  {
+    id: 'songci/31',
+    title: '虞美人·听雨',
+    author: '蒋捷',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '少年听雨歌楼上，红烛昏罗帐。壮年听雨客舟中，江阔云低、断雁叫西风。',
+    tags: ['婉约派', '听雨']
+  },
+  {
+    id: 'songci/32',
+    title: '青玉案·元夕',
+    author: '辛弃疾',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '东风夜放花千树，更吹落、星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。',
+    tags: ['豪放派', '元宵']
+  },
+  {
+    id: 'songci/33',
+    title: '鹧鸪天·代人赋',
+    author: '辛弃疾',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '陌上柔桑破嫩芽，东邻蚕种已生些。平冈细草鸣黄犊，斜日寒林点暮鸦。',
+    tags: ['豪放派', '田园']
+  },
+  {
+    id: 'songci/34',
+    title: '声声慢·寻寻觅觅',
+    author: '李清照',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '寻寻觅觅，冷冷清清，凄凄惨惨戚戚。乍暖还寒时候，最难将息。',
+    tags: ['婉约派', '愁思']
+  },
+  {
+    id: 'songci/35',
+    title: '水龙吟·登建康赏心亭',
+    author: '辛弃疾',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '楚天千里清秋，水随天去秋无际。遥岑远目，献愁供恨，玉簪螺髻。',
+    tags: ['豪放派', '登临']
+  },
+  {
+    id: 'songci/36',
+    title: '念奴娇·过洞庭',
+    author: '张孝祥',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '洞庭青草，近中秋，更无一点风色。玉鉴琼田三万顷，着我扁舟一叶。',
+    tags: ['豪放派', '中秋']
   },
   {
     id: 'yuanqu/1',

@@ -16,7 +16,7 @@ const categories = ref([
     icon: '📝',
     desc: '唐诗、宋词、元曲等经典诗词',
     count: 2,
-    link: '/category/shici'
+    link: '/shici'
   },
   {
     id: 'xiaoshuo',

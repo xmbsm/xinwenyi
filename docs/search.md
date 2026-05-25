@@ -4,7 +4,7 @@ layout: page
 ---
 
 <script setup>
-import SearchPage from './components/SearchPage.vue'
+import PagefindSearch from './components/PagefindSearch.vue'
 </script>
 
-<SearchPage />
+<PagefindSearch />

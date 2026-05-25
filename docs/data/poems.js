@@ -28,7 +28,17 @@ export const tangshiPoems = [
   { id: 27, title: '将进酒', author: '李白', dynasty: '唐', quote: '天生我材必有用，千金散尽还复来。' },
   { id: 28, title: '行路难', author: '李白', dynasty: '唐', quote: '长风破浪会有时，直挂云帆济沧海。' },
   { id: 29, title: '月下独酌', author: '李白', dynasty: '唐', quote: '举杯邀明月，对影成三人。' },
-  { id: 30, title: '夜雨寄北', author: '李商隐', dynasty: '唐', quote: '何当共剪西窗烛，却话巴山夜雨时。' }
+  { id: 30, title: '夜雨寄北', author: '李商隐', dynasty: '唐', quote: '何当共剪西窗烛，却话巴山夜雨时。' },
+  { id: 31, title: '无题', author: '李商隐', dynasty: '唐', quote: '春蚕到死丝方尽，蜡炬成灰泪始干。' },
+  { id: 32, title: '锦瑟', author: '李商隐', dynasty: '唐', quote: '此情可待成追忆，只是当时已惘然。' },
+  { id: 33, title: '登鹳雀楼', author: '王之涣', dynasty: '唐', quote: '欲穷千里目，更上一层楼。' },
+  { id: 34, title: '相思', author: '王维', dynasty: '唐', quote: '愿君多采撷，此物最相思。' },
+  { id: 35, title: '江雪', author: '柳宗元', dynasty: '唐', quote: '孤舟蓑笠翁，独钓寒江雪。' },
+  { id: 36, title: '乌衣巷', author: '刘禹锡', dynasty: '唐', quote: '旧时王谢堂前燕，飞入寻常百姓家。' },
+  { id: 37, title: '竹枝词', author: '刘禹锡', dynasty: '唐', quote: '东边日出西边雨，道是无晴却有晴。' },
+  { id: 38, title: '枫桥夜泊', author: '张继', dynasty: '唐', quote: '姑苏城外寒山寺，夜半钟声到客船。' },
+  { id: 39, title: '早发白帝城', author: '李白', dynasty: '唐', quote: '两岸猿声啼不住，轻舟已过万重山。' },
+  { id: 40, title: '望庐山瀑布', author: '李白', dynasty: '唐', quote: '飞流直下三千尺，疑是银河落九天。' }
 ]
 
 export const songciPoems = [
@@ -57,7 +67,17 @@ export const songciPoems = [
   { id: 23, title: '念奴娇·过洞庭', author: '张孝祥', dynasty: '宋', quote: '孤光自照，肝胆皆冰雪。' },
   { id: 24, title: '贺新郎·甚矣吾衰矣', author: '辛弃疾', dynasty: '宋', quote: '我见青山多妩媚，料青山见我应如是。' },
   { id: 25, title: '兰陵王·柳', author: '周邦彦', dynasty: '宋', quote: '柳阴直，烟里丝丝弄碧。' },
-  { id: 26, title: '踏莎行·郴州旅舍', author: '秦观', dynasty: '宋', quote: '雾失楼台，月迷津渡。' }
+  { id: 26, title: '踏莎行·郴州旅舍', author: '秦观', dynasty: '宋', quote: '雾失楼台，月迷津渡。' },
+  { id: 27, title: '江城子·乙卯正月二十日夜记梦', author: '苏轼', dynasty: '宋', quote: '十年生死两茫茫，不思量，自难忘。' },
+  { id: 28, title: '蝶恋花·花褪残红青杏小', author: '苏轼', dynasty: '宋', quote: '枝上柳绵吹又少，天涯何处无芳草。' },
+  { id: 29, title: '如梦令·常记溪亭日暮', author: '李清照', dynasty: '宋', quote: '兴尽晚回舟，误入藕花深处。' },
+  { id: 30, title: '一剪梅·舟过吴江', author: '蒋捷', dynasty: '宋', quote: '风又飘飘，雨又萧萧。' },
+  { id: 31, title: '虞美人·听雨', author: '蒋捷', dynasty: '宋', quote: '悲欢离合总无情，一任阶前、点滴到天明。' },
+  { id: 32, title: '青玉案·元夕', author: '辛弃疾', dynasty: '宋', quote: '众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。' },
+  { id: 33, title: '鹧鸪天·代人赋', author: '辛弃疾', dynasty: '宋', quote: '城中桃李愁风雨，春在溪头荠菜花。' },
+  { id: 34, title: '声声慢·寻寻觅觅', author: '李清照', dynasty: '宋', quote: '这次第，怎一个愁字了得！' },
+  { id: 35, title: '水龙吟·登建康赏心亭', author: '辛弃疾', dynasty: '宋', quote: '把吴钩看了，栏杆拍遍，无人会，登临意。' },
+  { id: 36, title: '念奴娇·过洞庭', author: '张孝祥', dynasty: '宋', quote: '孤光自照，肝胆皆冰雪。' }
 ]
 
 export const yuanquPoems = [

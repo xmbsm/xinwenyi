@@ -1,9 +1,10 @@
 <script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vitepress'
+import { computed, watch, onMounted } from 'vue'
+import { useRoute, useData } from 'vitepress'
 import { books as allBooks } from '../data/books.js'
 
 const route = useRoute()
+const { frontmatter } = useData()
 
 const authors = [
   {
@@ -198,6 +199,16 @@ const authorId = computed(() => {
 const author = computed(() => {
   return authors.find(a => a.id === authorId.value)
 })
+
+// 设置页面标题
+function updateTitle() {
+  if (author.value && typeof document !== 'undefined') {
+    document.title = `${author.value.name} | 新文艺`
+  }
+}
+
+watch(author, updateTitle, { immediate: true })
+onMounted(updateTitle)
 
 const authorBooks = computed(() => {
   if (!author.value) return []
