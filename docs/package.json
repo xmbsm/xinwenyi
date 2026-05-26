@@ -1,0 +1,26 @@
+{
+  "name": "xinwenyi",
+  "version": "1.0.0",
+  "description": "古典文学垂直类内容展示与阅读平台",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "node --max-old-space-size=4096 node_modules/.bin/vitepress build docs",
+    "build:win": "set NODE_OPTIONS=--max-old-space-size=4096 && vitepress build docs",
+    "build:pagefind": "node scripts/build-with-pagefind.js",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "古典文学",
+    "四大名著",
+    "诗词",
+    "小说",
+    "传统文化"
+  ],
+  "author": "新文艺",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0"
+  }
+}
