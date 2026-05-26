@@ -160,7 +160,7 @@ body.book-intro-page .vp-doc li {
   font-size: 16px;
 }
 
-/* 书库章节阅读页正文首行缩进两个文字 */
+/* 书库章节阅读页面正文首行缩进两个文字 */
 body.book-chapter-page .vp-doc p {
   text-indent: 2em;
 }
@@ -647,4 +647,67 @@ body.book-chapter-page .vp-doc p {
 .dark .VPNavBarMenu .VPNavBarMenuLink[href="/search.html"]:hover::before,
 .dark .VPNavScreenMenu .VPNavScreenMenuLink[href="/search.html"]:hover::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");
+}
+
+/* 移动端导航栏布局调整 - 将搜索图标放在汉堡菜单左边 */
+@media (max-width: 768px) {
+  /* 导航栏相对定位 */
+  .VPNavBar {
+    position: relative;
+  }
+  
+  /* 确保导航菜单在移动端仍然可见 */
+  .VPNavBarMenu {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  /* 搜索链接 - 绝对定位在整个导航栏的右侧，与汉堡菜单间距10px */
+  .VPNavBarMenu .VPNavBarMenuLink[href="/search.html"] {
+    position: absolute !important;
+    right: 58px !important;
+    top: 0 !important;
+    height: 100% !important;
+    width: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 100 !important;
+    font-size: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* 确保搜索图标可见 */
+  .VPNavBarMenu .VPNavBarMenuLink[href="/search.html"]::before {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* 确保汉堡菜单按钮在最右边 */
+  .VPNavBarMenuButton {
+    position: relative !important;
+    z-index: 90 !important;
+  }
+  
+  /* 隐藏其他导航链接，只在侧边菜单中显示 */
+  .VPNavBarMenu .VPNavBarMenuLink:not([href="/search.html"]) {
+    display: none !important;
+  }
+  
+  /* 隐藏下拉菜单中的搜索按钮 */
+  .VPNavScreenMenu .VPNavScreenMenuLink[href="/search.html"] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  /* 小屏幕进一步优化 */
+  .VPNavBarMenu .VPNavBarMenuLink[href="/search.html"] {
+    right: 54px !important;
+    width: 40px !important;
+  }
 }
