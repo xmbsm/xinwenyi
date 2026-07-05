@@ -1,14 +1,38 @@
 <script setup>
 import { computed, watch, onMounted } from 'vue'
 import { useRoute, useData } from 'vitepress'
-import { books as allBooks } from '../data/books.js'
+import { 
+  tangshiPoems, 
+  songciPoems, 
+  yuanquPoems, 
+  shijingPoems, 
+  chuciPoems, 
+  hanweishiPoems, 
+  yuefuPoems, 
+  mingqingshiPoems, 
+  nanbeichaoPoems, 
+  wudaiPoems 
+} from '../data/poems.js'
 
 const route = useRoute()
 const { frontmatter } = useData()
 
+const allPoems = [
+  ...tangshiPoems.map(p => ({ ...p, category: 'tangshi', categoryName: '唐诗' })),
+  ...songciPoems.map(p => ({ ...p, category: 'songci', categoryName: '宋词' })),
+  ...yuanquPoems.map(p => ({ ...p, category: 'yuanqu', categoryName: '元曲' })),
+  ...shijingPoems.map(p => ({ ...p, category: 'shijing', categoryName: '诗经' })),
+  ...chuciPoems.map(p => ({ ...p, category: 'chuci', categoryName: '楚辞' })),
+  ...hanweishiPoems.map(p => ({ ...p, category: 'hanweishi', categoryName: '汉魏诗' })),
+  ...yuefuPoems.map(p => ({ ...p, category: 'yuefu', categoryName: '乐府诗' })),
+  ...mingqingshiPoems.map(p => ({ ...p, category: 'mingqingshi', categoryName: '明清诗词' })),
+  ...nanbeichaoPoems.map(p => ({ ...p, category: 'nanbeichao', categoryName: '南北朝诗' })),
+  ...wudaiPoems.map(p => ({ ...p, category: 'wudai', categoryName: '五代词' }))
+]
+
 const authors = [
   {
-    id: 'baixingjian',
+    id: 'baijuyi',
     name: '白居易',
     dynasty: '唐代',
     dynastyId: 'tangdai',
@@ -71,7 +95,7 @@ const authors = [
     works: ['临江仙·夜登小阁忆洛中旧游']
   },
   {
-    id: 'chenzian',
+    id: 'chenziang',
     name: '陈子昂',
     dynasty: '唐代',
     dynastyId: 'tangdai',
@@ -161,7 +185,7 @@ const authors = [
     works: ['己亥杂诗']
   },
   {
-    id: 'guanhanging',
+    id: 'guanhanqing',
     name: '关汉卿',
     dynasty: '元代',
     dynastyId: 'yuandai',
@@ -186,6 +210,888 @@ const authors = [
     avatar: '韩',
     desc: '唐代杰出的文学家、思想家、哲学家。字退之，河南河阳人，世称"韩昌黎"。他是唐代古文运动的倡导者，被后人尊为"唐宋八大家"之首。',
     works: ['马说', '师说', '早春呈水部张十八员外']
+  },
+  {
+    id: 'banjieyu',
+    name: '班婕妤',
+    dynasty: '汉代',
+    dynastyId: 'handai',
+    avatar: '班',
+    desc: '西汉女文学家，名不详，为汉成帝妃子，封为婕妤。其诗赋多写宫中愁怨，《怨歌行》相传为她所作，是最早的宫怨诗之一。',
+    works: ['怨歌行']
+  },
+  {
+    id: 'baozhao',
+    name: '鲍照',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '鲍',
+    desc: '南朝宋著名文学家，字明远。其诗风格俊逸豪放，擅长乐府诗和七言诗，对唐代诗歌发展有重要影响。与谢灵运、颜延之并称"元嘉三大家"。',
+    works: ['拟行路难', '代出自蓟北门行', '梅花落']
+  },
+  {
+    id: 'caoxuequan',
+    name: '曹学佺',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '曹',
+    desc: '明代文学家、藏书家，字能始，号石仓。著述宏富，其诗风格清新自然，多写山水和闲情逸致。',
+    works: ['秋日杂诗']
+  },
+  {
+    id: 'fengyansi',
+    name: '冯延巳',
+    dynasty: '五代',
+    dynastyId: 'wudai',
+    avatar: '冯',
+    desc: '五代南唐词人，字正中。其词多写闲情逸致和离愁别绪，语言清丽，意境深远，对北宋初期的词人有较大影响。',
+    works: ['鹊踏枝·谁道闲情抛掷久', '谒金门·风乍起', '采桑子·群芳过后西湖好']
+  },
+  {
+    id: 'fuxuan',
+    name: '傅玄',
+    dynasty: '西晋',
+    dynastyId: 'xijin',
+    avatar: '傅',
+    desc: '西晋文学家、思想家，字休奕。其诗擅长乐府，多反映社会现实和妇女问题，风格质朴刚健。',
+    works: ['短歌行', '豫章行']
+  },
+  {
+    id: 'gaoqi',
+    name: '高启',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '高',
+    desc: '明初著名诗人，字季迪，号青丘子。"吴中四杰"之首，其诗风格清新俊逸，各体兼工，被誉为明代诗人之冠。',
+    works: ['登金陵雨花台望大江', '梅花九首', '寻胡隐君']
+  },
+  {
+    id: 'hexun',
+    name: '何逊',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '何',
+    desc: '南朝梁诗人，字仲言。其诗风格清新自然，擅长写景和抒情，尤以山水诗和赠别诗著称。与阴铿齐名，并称"阴何"。',
+    works: ['临行与故游夜别', '相送', '慈姥矶']
+  },
+  {
+    id: 'huangjingren',
+    name: '黄景仁',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '黄',
+    desc: '清代诗人，字汉镛，号仲则、鹿菲子。其诗风格清新俊逸，多写身世之感和愁思哀怨，被誉为"清代李白"。',
+    works: ['杂感', '绮怀十六首·其十五', '别老母']
+  },
+  {
+    id: 'kongzhigui',
+    name: '孔稚珪',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '孔',
+    desc: '南朝齐文学家，字德璋。其文辞工丽，尤以《北山移文》最为著名，文章风格诙谐犀利，是南朝骈文的名篇。',
+    works: ['北山移文', '游太平山']
+  },
+  {
+    id: 'liuji',
+    name: '刘基',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '刘',
+    desc: '明代开国元勋，字伯温。元末明初杰出的政治家、军事家、文学家。其诗文雄浑古朴，多反映社会现实和抒发政治抱负。',
+    works: ['题太公钓渭图', '北风行', '卖柑者言']
+  },
+  {
+    id: 'liyu',
+    name: '李煜',
+    dynasty: '五代',
+    dynastyId: 'wudai',
+    avatar: '李',
+    desc: '南唐后主，字重光，号钟隐、莲峰居士。五代时期最杰出的词人，其词前期多写宫廷生活，后期多抒亡国之痛，感情真挚，语言自然，对后世词的发展影响深远。',
+    works: ['虞美人·春花秋月何时了', '浪淘沙令·帘外雨潺潺', '相见欢·无言独上西楼']
+  },
+  {
+    id: 'nalanxingde',
+    name: '纳兰性德',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '纳',
+    desc: '清代著名词人，原名成德，字容若，号楞伽山人。其词风格清新婉丽，多写爱情、相思和悼亡，情感真挚，被誉为"清代第一词人"。',
+    works: ['浣溪沙·谁念西风独自凉', '木兰花令·拟古决绝词柬友', '长相思·山一程']
+  },
+  {
+    id: 'qijiguang',
+    name: '戚继光',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '戚',
+    desc: '明代抗倭名将、军事家，字元敬，号南塘。不仅战功赫赫，亦能诗文，其诗多抒发爱国豪情和军事生涯的感慨，风格慷慨悲壮。',
+    works: ['马上作', '韬钤深处']
+  },
+  {
+    id: 'shenyue',
+    name: '沈约',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '沈',
+    desc: '南朝梁著名文学家、史学家，字休文。"竟陵八友"之一，创"四声八病"之说，对近体诗的形成有重要贡献。其诗风格清丽，注重声律。',
+    works: ['别范安成', '伤谢朓', '咏芙蓉']
+  },
+  {
+    id: 'wangcan',
+    name: '王粲',
+    dynasty: '东汉',
+    dynastyId: 'donghan',
+    avatar: '王',
+    desc: '东汉末年文学家，字仲宣。"建安七子"之一，其诗风格慷慨悲凉，多写乱离之苦和思乡之情，《七哀诗》是其代表作。',
+    works: ['七哀诗', '登楼赋']
+  },
+  {
+    id: 'wangji',
+    name: '王籍',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '王',
+    desc: '南朝梁诗人，字文海。其诗擅长写景，以《入若耶溪》最为著名，其中"蝉噪林逾静，鸟鸣山更幽"两句，被誉为千古名句。',
+    works: ['入若耶溪']
+  },
+  {
+    id: 'wangrong',
+    name: '王融',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '王',
+    desc: '南朝齐文学家，字元长。"竟陵八友"之一，其诗讲究声律，文辞富丽，对永明体的形成有重要贡献。',
+    works: ['临高台', '巫山高', '古意咏史']
+  },
+  {
+    id: 'wangsengru',
+    name: '王僧孺',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '王',
+    desc: '南朝梁文学家，字僧孺。其诗风格艳丽，多写闺情和咏物，是梁代宫廷文学的代表作家之一。',
+    works: ['冬日晚郡事隙']
+  },
+  {
+    id: 'wangshizhen',
+    name: '王士禛',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '王',
+    desc: '清代著名诗人，字子真，号阮亭、渔洋山人。"神韵说"的倡导者，其诗风格含蓄蕴藉，意境悠远，为清初诗坛领袖。',
+    works: ['秋柳四首·其一', '真州绝句', '题秋江独钓图']
+  },
+  {
+    id: 'weizhuang',
+    name: '韦庄',
+    dynasty: '五代',
+    dynastyId: 'wudai',
+    avatar: '韦',
+    desc: '晚唐至五代时期著名诗人、词人，字端己。"花间派"代表词人之一，与温庭筠并称"温韦"。其词风格清丽，多写离愁别绪和身世之感。',
+    works: ['菩萨蛮·人人尽说江南好', '思帝乡·春日游', '女冠子·四月十七']
+  },
+  {
+    id: 'wendingjun',
+    name: '温庭筠',
+    dynasty: '五代',
+    dynastyId: 'wudai',
+    avatar: '温',
+    desc: '唐代诗人、词人，字飞卿。"花间派"词派的鼻祖，其词风格秾艳精致，多写闺情。诗与李商隐齐名，并称"温李"。',
+    works: ['菩萨蛮·小山重叠金明灭', '更漏子·玉炉香', '梦江南·梳洗罢']
+  },
+  {
+    id: 'wujun',
+    name: '吴均',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '吴',
+    desc: '南朝梁文学家，字叔庠。其诗风格清新挺拔，擅长山水写景，时称"吴均体"。也擅长骈文，尤以小品书札著称。',
+    works: ['咏雪', '赠王桂阳', '与朱元思书']
+  },
+  {
+    id: 'wumaiyuan',
+    name: '吴迈远',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '吴',
+    desc: '南朝宋诗人，其诗多为乐府诗，风格清丽，多写男女爱情和离愁别绪，是南朝乐府诗的重要作者。',
+    works: ['春怨', '长相思']
+  },
+  {
+    id: 'xiawanchun',
+    name: '夏完淳',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '夏',
+    desc: '南明抗清英雄、诗人，字存古，号小隐。少年英才，投身抗清斗争，兵败被俘，英勇就义，年仅十七岁。其诗慷慨悲壮，充满爱国情怀。',
+    works: ['别云间', '即事', '大哀赋']
+  },
+  {
+    id: 'xielingyun',
+    name: '谢灵运',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '谢',
+    desc: '东晋末年至南朝宋初年的著名诗人，被誉为"山水诗派"的开创者。其诗善于描绘自然景物，语言精雕细琢，对后世山水诗的发展产生了深远影响。',
+    works: ['登池上楼', '石壁精舍还湖中作', '七里濑']
+  },
+  {
+    id: 'xietiao',
+    name: '谢朓',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '谢',
+    desc: '南朝齐著名诗人，字玄晖。与谢灵运同族，人称"小谢"。其诗风格清新秀丽，擅长山水诗，对仗工整，对唐代近体诗的形成有重要影响。',
+    works: ['晚登三山还望京邑', '玉阶怨', '游东田']
+  },
+  {
+    id: 'yangshen',
+    name: '杨慎',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '杨',
+    desc: '明代著名文学家，字用修，号升庵。"明代三才子"之首，博学多才，诗词、文、考据等无不精通。其词风格清丽婉约，《临江仙·滚滚长江东逝水》千古传诵。',
+    works: ['临江仙·滚滚长江东逝水', '西江月·道德三皇五帝', '三岔驿']
+  },
+  {
+    id: 'yangshiqi',
+    name: '杨士奇',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '杨',
+    desc: '明代名臣、文学家，字士奇，号东里。"三杨"之一，其诗风格雍容典雅，多为台阁体，是明初"台阁体"诗文的代表人物之一。',
+    works: ['寄答张孟威', '秦淮海祠']
+  },
+  {
+    id: 'yanyanzhi',
+    name: '颜延之',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '颜',
+    desc: '南朝宋文学家，字延年。与谢灵运齐名，并称"颜谢"，同为"元嘉三大家"之一。其诗好用典故，讲究雕琢，风格凝重华丽。',
+    works: ['五君咏·阮步兵', '秋胡行', '望织女']
+  },
+  {
+    id: 'yiming',
+    name: '佚名',
+    dynasty: '不详',
+    dynastyId: 'buxiang',
+    avatar: '佚',
+    desc: '古代佚名诗人，其作品流传千古，作者姓名已不可考。这些作品多来自民间，反映了当时的社会生活和人民的思想感情。',
+    works: ['孔雀东南飞', '木兰辞', '陌上桑']
+  },
+  {
+    id: 'yuanmei',
+    name: '袁枚',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '袁',
+    desc: '清代著名诗人、文学家，字子才，号简斋、随园老人。"性灵说"的倡导者，其诗风格清新灵巧，多写个人性情和生活情趣。',
+    works: ['苔', '马嵬', '寒夜']
+  },
+  {
+    id: 'yujianwu',
+    name: '庾肩吾',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '庾',
+    desc: '南朝梁文学家，字子慎。庾信之父，"宫体诗"的重要作家之一，其诗风格华丽，多写宫廷生活和景物。',
+    works: ['舟中望月']
+  },
+  {
+    id: 'yuxin',
+    name: '庾信',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '庾',
+    desc: '南北朝时期著名文学家，字子山。早年与徐陵齐名，并称"徐庾"。其诗赋风格华丽，晚年因经历亡国之痛，作品转为沉郁苍凉，对唐代诗歌影响深远。',
+    works: ['拟咏怀', '重别周尚书', '寄王琳']
+  },
+  {
+    id: 'zhengxie',
+    name: '郑燮',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '郑',
+    desc: '清代书画家、文学家，字克柔，号板桥。"扬州八怪"之一，其诗、书、画世称"三绝"。其诗风格清新质朴，多反映民间疾苦和抒写性情。',
+    works: ['竹石', '题画竹', '潍县署中画竹呈年伯包大中丞括']
+  },
+  {
+    id: 'zhangpu',
+    name: '张溥',
+    dynasty: '明代',
+    dynastyId: 'mingdai',
+    avatar: '张',
+    desc: '明末文学家，字天如，号西铭。"复社"领袖，其散文风格朴实，内容充实，《五人墓碑记》是其代表作。',
+    works: ['五人墓碑记', '五人墓']
+  },
+  {
+    id: 'zhaoyi',
+    name: '赵翼',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '赵',
+    desc: '清代史学家、诗人，字云崧，号瓯北。其诗风格开朗畅达，多咏史和论诗之作，与袁枚、蒋士铨并称"乾隆三大家"。',
+    works: ['论诗五首·其二']
+  },
+  {
+    id: 'zhuyizun',
+    name: '朱彝尊',
+    dynasty: '清代',
+    dynastyId: 'qingdai',
+    avatar: '朱',
+    desc: '清代著名词人、学者，字锡鬯，号竹垞。"浙西词派"的开创者，与陈维崧并称"朱陈"。其词风格清丽醇雅，多写身世之感和咏物怀古。',
+    works: ['桂殿秋·思往事', '解佩令·自题词集', '卖花声·雨花台']
+  },
+  {
+    id: 'songyu',
+    name: '宋玉',
+    dynasty: '战国',
+    dynastyId: 'zhanguo',
+    avatar: '宋',
+    desc: '战国末期楚国辞赋家，相传为屈原弟子。与屈原并称"屈宋"，其作品铺陈华丽，想象丰富，对汉赋发展产生深远影响。《九辩》《风赋》《神女赋》等相传为其所作。',
+    works: ['九辩', '风赋', '高唐赋', '神女赋', '登徒子好色赋']
+  },
+  {
+    id: 'jiayi',
+    name: '贾谊',
+    dynasty: '西汉',
+    dynastyId: 'xihan',
+    avatar: '贾',
+    desc: '西汉杰出的政论家、文学家，世称贾生、贾太傅。年少才高，被汉文帝赏识，因遭权臣排挤贬为长沙王太傅。其政论文气势磅礴，辞赋承袭楚辞传统，对后世影响深远。',
+    works: ['吊屈原赋', '鵩鸟赋', '过秦论', '论积贮疏']
+  },
+  {
+    id: 'dongfangshuo',
+    name: '东方朔',
+    dynasty: '西汉',
+    dynastyId: 'xihan',
+    avatar: '东',
+    desc: '西汉文学家、辞赋家，字曼倩。汉武帝时为太中大夫，以诙谐滑稽著称，善辞赋。其作品承袭楚辞风格，代表作有《七谏》等。',
+    works: ['七谏', '答客难', '非有先生论']
+  },
+  {
+    id: 'wangbao',
+    name: '王褒',
+    dynasty: '西汉',
+    dynastyId: 'xihan',
+    avatar: '王',
+    desc: '西汉辞赋家，字子渊。汉宣帝时待诏金马门，擢为谏议大夫。其辞赋承袭楚辞传统，文辞华美，代表作有《九怀》《洞箫赋》等。',
+    works: ['九怀', '洞箫赋', '甘泉赋']
+  },
+  {
+    id: 'liuxiang',
+    name: '刘向',
+    dynasty: '西汉',
+    dynastyId: 'xihan',
+    avatar: '刘',
+    desc: '西汉经学家、目录学家、文学家，本名更生，字子政。汉皇族宗室，领校群书，编成《别录》，又编《楚辞》集，对保存先秦文献贡献巨大。其辞赋作品有《九叹》等。',
+    works: ['九叹', '列女传', '新序', '说苑']
+  },
+  {
+    id: 'wangyi',
+    name: '王逸',
+    dynasty: '东汉',
+    dynastyId: 'donghan',
+    avatar: '王',
+    desc: '东汉文学家，字叔师。顺帝时为校书郎。所作《楚辞章句》是现存最早的《楚辞》注本，对楚辞研究贡献巨大。其辞赋作品有《九思》等。',
+    works: ['九思', '楚辞章句']
+  },
+  {
+    id: 'zhuangji',
+    name: '庄忌',
+    dynasty: '西汉',
+    dynastyId: 'xihan',
+    avatar: '庄',
+    desc: '西汉辞赋家，一说名严忌。汉景帝时为梁孝王门客。其辞赋作品承袭楚辞传统，代表作《哀时命》抒发怀才不遇之情，被收入《楚辞》集。',
+    works: ['哀时命']
+  },
+  {
+    id: 'huainanxiaoshan',
+    name: '淮南小山',
+    dynasty: '西汉',
+    dynastyId: 'xihan',
+    avatar: '淮',
+    desc: '西汉淮南王刘安门下文客的合称，为淮南王刘安所招致养士的一部分。其作品承袭楚辞传统，代表作《招隐士》被收入《楚辞》集，写山林险恶，劝隐士出山。',
+    works: ['招隐士']
+  },
+  {
+    id: 'caopi',
+    name: '曹丕',
+    dynasty: '魏代',
+    dynastyId: 'weidai',
+    avatar: '曹',
+    desc: '三国时期著名政治家、文学家，字子桓，曹操次子，三国魏开国皇帝，史称魏文帝。其诗清丽婉约，善写男女情思；其《典论·论文》是中国文学批评史上的重要著作。与曹操、曹植合称"三曹"。',
+    works: ['燕歌行', '杂诗', '典论·论文']
+  },
+  {
+    id: 'ruanji',
+    name: '阮籍',
+    dynasty: '魏代',
+    dynastyId: 'weidai',
+    avatar: '阮',
+    desc: '三国魏著名诗人、思想家，字嗣宗，"竹林七贤"之一。阮瑀之子，曾任步兵校尉，世称阮步兵。其诗以《咏怀诗》八十二首为代表，旨意隐晦，忧愤深广，对五言抒情诗发展影响深远。',
+    works: ['咏怀诗·夜中不能寐', '咏怀诗·嘉树下成蹊', '大人先生传']
+  },
+  {
+    id: 'jikang',
+    name: '嵇康',
+    dynasty: '魏代',
+    dynastyId: 'weidai',
+    avatar: '嵇',
+    desc: '三国魏著名思想家、文学家、音乐家，字叔夜，"竹林七贤"之一。与魏宗室联姻，官至中散大夫，世称嵇中散。因得罪司马氏被杀。其诗以四言见长，散文笔力犀利，风格清峻。',
+    works: ['赠秀才入军', '幽愤诗', '与山巨源绝交书', '声无哀乐论']
+  },
+  {
+    id: 'panyue',
+    name: '潘岳',
+    dynasty: '西晋',
+    dynastyId: 'xijin',
+    avatar: '潘',
+    desc: '西晋著名文学家，字安仁，世称潘安。美姿仪，与陆机齐名，并称"潘陆"。其诗辞藻华艳，善写哀伤之情，《悼亡诗》三首为悼念亡妻之作，遂使"悼亡"成为专指悼念亡妻的诗题。',
+    works: ['悼亡诗', '秋兴赋', '闲居赋']
+  },
+  {
+    id: 'zuosi',
+    name: '左思',
+    dynasty: '西晋',
+    dynastyId: 'xijin',
+    avatar: '左',
+    desc: '西晋著名文学家，字太冲。其《咏史》诗八首借咏史以咏怀，开创咏史诗新风气，对后世咏史诗影响深远。曾构思十年写成《三都赋》，豪贵竞相抄写，洛阳为之纸贵。',
+    works: ['咏史·弱冠弄柔翰', '咏史·郁郁涧底松', '三都赋', '娇女诗']
+  },
+  {
+    id: 'luji',
+    name: '陆机',
+    dynasty: '西晋',
+    dynastyId: 'xijin',
+    avatar: '陆',
+    desc: '西晋著名文学家、文学理论家，字士衡。与弟陆云合称"二陆"。其《文赋》是中国文学理论史上的重要著作，首次系统论述文学创作过程。诗重藻绘排偶，开六朝绮靡之风。',
+    works: ['拟行行重行行', '文赋', '赴洛道中作']
+  },
+  {
+    id: 'liukun',
+    name: '刘琨',
+    dynasty: '西晋',
+    dynastyId: 'xijin',
+    avatar: '刘',
+    desc: '西晋将领、诗人，字越石。少时与祖逖闻鸡起舞，有志恢复中原。永嘉之乱后，长期在北方坚持抗击石勒，后为段匹磾所害。其诗慷慨悲壮，抒发爱国情怀，代表作有《扶风歌》等。',
+    works: ['扶风歌', '重赠卢谌', '答卢谌诗']
+  },
+  {
+    id: 'guopu',
+    name: '郭璞',
+    dynasty: '东晋',
+    dynastyId: 'jindai',
+    avatar: '郭',
+    desc: '东晋著名文学家、训诂学家、术数家，字景纯。博学多才，好古文奇字，又精阴阳历算。其《游仙诗》十四首借游仙以咏怀，辞采华丽，寄托深远。又注《尔雅》《方言》《山海经》等。',
+    works: ['游仙诗', '江赋', '尔雅注']
+  },
+  {
+    id: 'quyuan',
+    name: '屈原',
+    dynasty: '战国',
+    dynastyId: 'zhanguo',
+    avatar: '屈',
+    desc: '战国末期楚国诗人、政治家，名平，字原。中国浪漫主义文学的奠基人，"楚辞"的创立者和代表作家。屈原是中国文学史上第一位伟大的爱国诗人，其作品想象奇特，辞采绚烂，气象恢宏，对后世诗歌文学产生深远影响。代表作有《离骚》《九歌》《天问》《九章》等。',
+    works: ['离骚', '九歌', '天问', '九章', '远游', '卜居', '渔父']
+  },
+  {
+    id: 'chenlin',
+    name: '陈琳',
+    dynasty: '东汉',
+    dynastyId: 'donghan',
+    avatar: '陈',
+    desc: '东汉末年著名文学家，字孔璋，广陵射阳（今江苏宝应）人。"建安七子"之一。初为大将军何进主簿，后归袁绍，绍败归曹操。擅长章表书记，诗风质朴刚健。代表作有《饮马长城窟行》《为袁绍檄豫州文》等。',
+    works: ['饮马长城窟行', '为袁绍檄豫州文', '游览诗']
+  },
+  {
+    id: 'libai',
+    name: '李白',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '李',
+    desc: '唐代伟大的浪漫主义诗人，字太白，号青莲居士，被后人誉为"诗仙"。其诗风雄奇豪放，想象丰富，意境奇妙，语言流转自然，与杜甫并称"李杜"，对后世诗歌影响深远。',
+    works: ['静夜思', '将进酒', '望庐山瀑布', '早发白帝城', '行路难', '月下独酌']
+  },
+  {
+    id: 'wangwei',
+    name: '王维',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '王',
+    desc: '唐代著名诗人、画家，字摩诘，号摩诘居士。精通诗书画乐，有"诗佛"之称。其山水田园诗与孟浩然并称"王孟"，对后世山水诗影响深远。',
+    works: ['相思', '山居秋暝', '使至塞上', '鹿柴', '竹里馆', '送元二使安西']
+  },
+  {
+    id: 'wangzhihuan',
+    name: '王之涣',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '王',
+    desc: '唐代著名边塞诗人，字季凌。其诗以描写边塞风光著称，气势恢宏，意境开阔。代表作有《登鹳雀楼》《凉州词》等。',
+    works: ['登鹳雀楼', '凉州词', '宴词']
+  },
+  {
+    id: 'menghaoran',
+    name: '孟浩然',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '孟',
+    desc: '唐代著名诗人，以山水田园诗著称，与王维并称"王孟"。其诗风格清淡自然，多写隐居生活和山水景色。',
+    works: ['春晓', '过故人庄', '宿建德江', '望洞庭湖赠张丞相']
+  },
+  {
+    id: 'wangchangling',
+    name: '王昌龄',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '王',
+    desc: '唐代著名边塞诗人，字少伯。其诗以七绝见长，被后人誉为"七绝圣手"。代表作有《出塞》《从军行》等。',
+    works: ['出塞', '从军行', '芙蓉楼送辛渐']
+  },
+  {
+    id: 'lishen',
+    name: '李绅',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '李',
+    desc: '唐代诗人，字公垂。与元稹、白居易交游甚密，是新乐府运动的参与者之一。其《悯农》二首流传甚广。',
+    works: ['悯农·其一', '悯农·其二']
+  },
+  {
+    id: 'mengjiao',
+    name: '孟郊',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '孟',
+    desc: '唐代著名诗人，字东野。其诗风格古朴，多写贫寒生活之情，与贾岛并称"郊寒岛瘦"。代表作有《游子吟》等。',
+    works: ['游子吟', '登科后']
+  },
+  {
+    id: 'wangbo',
+    name: '王勃',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '王',
+    desc: '唐代著名文学家，字子安。"初唐四杰"之一。其诗文词采华丽，气势宏伟。代表作有《送杜少府之任蜀州》《滕王阁序》等。',
+    works: ['送杜少府之任蜀州', '滕王阁序']
+  },
+  {
+    id: 'lishangyin',
+    name: '李商隐',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '李',
+    desc: '唐代著名诗人，字义山，号玉谿生。其诗构思新奇，意境朦胧，尤以无题诗著称。与杜牧合称"小李杜"，对后世诗歌影响深远。',
+    works: ['无题', '锦瑟', '夜雨寄北', '嫦娥']
+  },
+  {
+    id: 'liuzongyuan',
+    name: '柳宗元',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '柳',
+    desc: '唐代著名文学家、哲学家，字子厚，河东人，世称"柳河东"。与韩愈并称"韩柳"，为唐宋八大家之一。其诗文风格清峻，寓言散文成就尤高。',
+    works: ['江雪', '永州八记', '捕蛇者说']
+  },
+  {
+    id: 'liuyuxi',
+    name: '刘禹锡',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '刘',
+    desc: '唐代著名诗人，字梦得，河南洛阳人。其诗风清新自然，善于用典，有"诗豪"之称。与白居易并称"刘白"。',
+    works: ['乌衣巷', '竹枝词', '陋室铭', '秋词']
+  },
+  {
+    id: 'zhangji',
+    name: '张继',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '张',
+    desc: '唐代诗人，字懿孙，襄州人。其诗多写羁旅之情，风格清丽自然，《枫桥夜泊》是其最负盛名的作品。',
+    works: ['枫桥夜泊']
+  },
+  {
+    id: 'censhen',
+    name: '岑参',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '岑',
+    desc: '唐代著名边塞诗人，与高适并称"高岑"。其诗气势磅礴，色彩瑰丽，善写边塞风光和军旅生活。代表作有《白雪歌送武判官归京》《逢入京使》等。',
+    works: ['白雪歌送武判官归京', '逢入京使', '走马川行奉送封大夫出师西征']
+  },
+  {
+    id: 'liyi',
+    name: '李益',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '李',
+    desc: '唐代诗人，字君虞。其诗多写边塞风光和征人思乡之情，音律和谐，语言精炼。代表作有《夜上受降城闻笛》《江南曲》等。',
+    works: ['夜上受降城闻笛', '江南曲', '从军北征']
+  },
+  {
+    id: 'weiyingwu',
+    name: '韦应物',
+    dynasty: '唐代',
+    dynastyId: 'tangdai',
+    avatar: '韦',
+    desc: '唐代著名诗人，京兆万年人。其诗风格闲淡清雅，多写山水田园和隐逸生活，与王维、孟浩然、柳宗元并称"王孟韦柳"。',
+    works: ['滁州西涧', '寄李儋元锡', '淮上喜会梁川故人']
+  },
+  {
+    id: 'sushi',
+    name: '苏轼',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '苏',
+    desc: '北宋著名文学家，字子瞻，号东坡居士。其词开创豪放一派，与辛弃疾并称"苏辛"，为唐宋八大家之一。诗、词、文、书、画皆有极高成就。',
+    works: ['水调歌头·明月几时有', '念奴娇·赤壁怀古', '定风波·莫听穿林打叶声', '江城子·密州出猎']
+  },
+  {
+    id: 'liqingzhao',
+    name: '李清照',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '李',
+    desc: '宋代著名女词人，号易安居士。其词前期清丽婉转，后期沉郁悲凉，被誉为"千古第一才女"。为婉约派代表词人。',
+    works: ['声声慢·寻寻觅觅', '如梦令·昨夜雨疏风骤', '一剪梅·红藕香残玉簟秋', '醉花阴·薄雾浓云愁永昼']
+  },
+  {
+    id: 'xinqiji',
+    name: '辛弃疾',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '辛',
+    desc: '南宋著名词人，字幼安，号稼轩。其词风格豪放，气势磅礴，与苏轼并称"苏辛"，是豪放派代表词人。多写爱国情怀和壮志难酬的感慨。',
+    works: ['破阵子·为陈同甫赋壮词以寄之', '永遇乐·京口北固亭怀古', '水龙吟·登建康赏心亭', '青玉案·元夕']
+  },
+  {
+    id: 'liuyong',
+    name: '柳永',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '柳',
+    desc: '北宋著名词人，原名三变，字耆卿。其词多写都市繁华和男女之情，擅长慢词，语言通俗，流传甚广。代表作有《雨霖铃》《八声甘州》等。',
+    works: ['雨霖铃·寒蝉凄切', '八声甘州·对潇潇暮雨洒江天', '蝶恋花·伫倚危楼风细细']
+  },
+  {
+    id: 'yuefei',
+    name: '岳飞',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '岳',
+    desc: '南宋抗金名将、词人，字鹏举。其词仅存三首，但《满江红·写怀》慷慨悲壮，千古传诵，充分表现了精忠报国的情怀。',
+    works: ['满江红·写怀', '小重山·昨夜寒蛩不住鸣']
+  },
+  {
+    id: 'qinguan',
+    name: '秦观',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '秦',
+    desc: '北宋著名词人，字少游，号淮海居士。"苏门四学士"之一。其词风格清丽婉约，多写离愁别绪和爱情，为婉约派代表词人。',
+    works: ['鹊桥仙·纤云弄巧', '踏莎行·郴州旅舍', '满庭芳·山抹微云']
+  },
+  {
+    id: 'jiangkui',
+    name: '姜夔',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '姜',
+    desc: '南宋著名词人、音乐家，字尧章，号白石道人。其词格律精严，字句精美，多写恋情和咏物。代表作有《扬州慢》《暗香》《疏影》等。',
+    works: ['扬州慢·淮左名都', '暗香·旧时月色', '疏影·苔枝缀玉']
+  },
+  {
+    id: 'zhangxiaoxiang',
+    name: '张孝祥',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '张',
+    desc: '南宋著名词人，字安国，号于湖居士。其词风格豪放激昂，上承苏轼，下启辛弃疾，是南宋豪放词派的重要代表。',
+    works: ['念奴娇·过洞庭', '六州歌头·长淮望断']
+  },
+  {
+    id: 'zhoubangyan',
+    name: '周邦彦',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '周',
+    desc: '北宋著名词人，字美成，号清真居士。其词格律谨严，语言精丽，为婉约派集大成者，对南宋词影响深远。代表作有《兰陵王·柳》《苏幕遮·燎沉香》等。',
+    works: ['兰陵王·柳', '苏幕遮·燎沉香', '六丑·蔷薇谢后作']
+  },
+  {
+    id: 'wanganshi',
+    name: '王安石',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '王',
+    desc: '北宋著名政治家、文学家，字介甫，号半山。唐宋八大家之一。其诗文风格遒劲，多写政治抱负和咏史怀古。代表作有《桂枝香·金陵怀古》《泊船瓜洲》等。',
+    works: ['桂枝香·金陵怀古', '泊船瓜洲', '登飞来峰']
+  },
+  {
+    id: 'fanchengda',
+    name: '范成大',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '范',
+    desc: '南宋著名诗人，字致能，号石湖居士。与杨万里、陆游、尤袤合称"中兴四大诗人"。其诗多写田园生活和民生疾苦。代表作有《四时田园杂兴》《鹊桥仙·七夕》等。',
+    works: ['四时田园杂兴', '鹊桥仙·七夕', '州桥']
+  },
+  {
+    id: 'luyou',
+    name: '陆游',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '陆',
+    desc: '南宋著名爱国诗人，字务观，号放翁。其诗词多写抗金救国和壮志难酬之情，风格雄浑悲壮。与尤袤、杨万里、范成大合称"中兴四大诗人"。',
+    works: ['钗头凤·红酥手', '诉衷情·当年万里觅封侯', '示儿', '游山西村']
+  },
+  {
+    id: 'yanshu',
+    name: '晏殊',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '晏',
+    desc: '北宋著名词人，字同叔。其词风格闲雅婉丽，多写富贵生活和离愁别绪。与欧阳修并称"晏欧"。代表作有《浣溪沙·一曲新词酒一杯》《破阵子·春景》等。',
+    works: ['浣溪沙·一曲新词酒一杯', '破阵子·春景', '蝶恋花·槛菊愁烟兰泣露']
+  },
+  {
+    id: 'zhangxian',
+    name: '张先',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '张',
+    desc: '北宋著名词人，字子野。其词多写男女之情和闲适生活，语言清丽。因词中多用"影"字，被称为"张三影"。代表作有《天仙子·水调数声持酒听》等。',
+    works: ['天仙子·水调数声持酒听', '青门引·春思', '剪牡丹·舟中闻双琵琶']
+  },
+  {
+    id: 'mazhiyuan',
+    name: '马致远',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '马',
+    desc: '元代著名戏曲家、散曲家，号东篱，大都（今北京）人。"元曲四大家"之一。其散曲风格豪放洒脱，意境深远，被誉为"曲状元"。代表作有《天净沙·秋思》等。',
+    works: ['天净沙·秋思', '拨不断·叹寒儒', '寿阳曲·远浦帆归', '落梅风·人初静']
+  },
+  {
+    id: 'zhangkejiu',
+    name: '张可久',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '张',
+    desc: '元代著名散曲家，字小山，庆元（今浙江宁波）人。其曲多写隐逸生活和山水之趣，风格清丽典雅，是元代散曲大家。代表作有《人月圆·山中书事》《卖花声·怀古》等。',
+    works: ['人月圆·山中书事', '卖花声·怀古', '清江引·秋怀', '殿前欢·离思']
+  },
+  {
+    id: 'xuzaisi',
+    name: '徐再思',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '徐',
+    desc: '元代著名散曲家，字德可，号甜斋，嘉兴人。其曲多写闺情和隐逸生活，风格清丽婉约，与贯云石并称"酸甜乐府"。代表作有《折桂令·春情》《水仙子·夜雨》等。',
+    works: ['折桂令·春情', '水仙子·夜雨', '普天乐·西山夕照']
+  },
+  {
+    id: 'zhangyanghao',
+    name: '张养浩',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '张',
+    desc: '元代著名散曲家，字希孟，号云庄。其散曲多写隐逸生活，风格清新自然，也有关心民生疾苦之作。代表作有《山坡羊·潼关怀古》《山坡羊·骊山怀古》等。',
+    works: ['山坡羊·潼关怀古', '山坡羊·骊山怀古', '山坡羊·未央怀古', '殿前欢·对菊自叹']
+  },
+  {
+    id: 'zhoudqing',
+    name: '周德清',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '周',
+    desc: '元代著名散曲家、音韵学家，字挺斋，高安人。其曲多写山水景物，风格清丽明快。著有《中原音韵》，为北曲音韵的权威著作。代表作有《塞鸿秋·浔阳即景》等。',
+    works: ['塞鸿秋·浔阳即景']
+  },
+  {
+    id: 'yaosui',
+    name: '姚燧',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '姚',
+    desc: '元代著名散曲家、文学家，字端甫，号牧庵，洛阳人。其曲多写闺情和隐逸生活，风格清丽婉约。代表作有《凭阑人·寄征衣》等。',
+    works: ['凭阑人·寄征衣']
+  },
+  {
+    id: 'luzhi',
+    name: '卢挚',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '卢',
+    desc: '元代著名散曲家、文学家，字处道，号疏斋，涿郡人。其曲多写山水景物，风格清丽典雅。代表作有《沉醉东风·秋景》《殿前欢·吊古》等。',
+    works: ['沉醉东风·秋景', '殿前欢·吊古', '沉醉东风·闲居']
+  },
+  {
+    id: 'wuxiyi',
+    name: '吴西逸',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '吴',
+    desc: '元代散曲家，生平不详。其曲多写山水隐逸，风格清丽淡雅。代表作有《清江引·秋居》等。',
+    works: ['清江引·秋居']
+  },
+  {
+    id: 'alixiying',
+    name: '阿里西瑛',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '阿',
+    desc: '元代散曲家，回族，居吴城（今江苏苏州）。其曲多写隐逸生活，风格质朴自然。代表作有《殿前欢·懒云窝》等。',
+    works: ['殿前欢·懒云窝']
+  },
+  {
+    id: 'qiaoji',
+    name: '乔吉',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '乔',
+    desc: '元代著名散曲家，字梦符，号笙鹤翁，太原人。其曲多写山水和隐逸，风格清丽典雅。与张可久齐名，并称"乔张"。代表作有《水仙子·寻梅》《折桂令·客窗清明》等。',
+    works: ['水仙子·寻梅', '折桂令·客窗清明', '水仙子·重观瀑布']
+  },
+  {
+    id: 'huzhiyu',
+    name: '胡祗遹',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '胡',
+    desc: '元代文学家、散曲家，字绍开，号紫山。其曲风格清丽，多写闲适生活。代表作有《一半儿·春醉》等。',
+    works: ['一半儿·春醉']
+  },
+  {
+    id: 'dengyubin',
+    name: '邓玉宾',
+    dynasty: '元代',
+    dynastyId: 'yuandai',
+    avatar: '邓',
+    desc: '元代散曲家，生平不详。其曲多写道家思想和隐逸生活，风格清雅。代表作有《叨叨令·道情》等。',
+    works: ['叨叨令·道情', '寄生草·饮']
+  },
+  {
+    id: 'jiangjie',
+    name: '蒋捷',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '蒋',
+    desc: '南宋末年词人，字胜欲，号竹山。宋亡后隐居不仕，其词多写故国之思和身世之感，风格悲凉清俊。代表作有《虞美人·听雨》《一剪梅·舟过吴江》等。',
+    works: ['虞美人·听雨', '一剪梅·舟过吴江', '贺新郎·兵后寓吴']
+  },
+  {
+    id: 'lizhiyi',
+    name: '李之仪',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '李',
+    desc: '北宋词人，字端叔，号姑溪居士。生于庆历八年（1048年），卒于政和七年（1117年）。其为苏轼门人，与苏轼、黄庭坚、秦观等人交游唱和。其词风格清丽婉约，多写离情别绪，语言质朴自然，情真意切。代表作《卜算子·我住长江头》以长江为线索写相思之情，被誉为"借水言情"的典范之作。',
+    works: ['卜算子·我住长江头', '谢池春·残寒销尽', '临江仙·登凌歊台']
   }
 ]
 
@@ -210,13 +1116,21 @@ function updateTitle() {
 watch(author, updateTitle, { immediate: true })
 onMounted(updateTitle)
 
-const authorBooks = computed(() => {
+const authorPoems = computed(() => {
   if (!author.value) return []
-  return allBooks.filter(book => book.author === author.value.name)
+  return allPoems.filter(poem => poem.author === author.value.name)
 })
 
 function goBack() {
   window.history.back()
+}
+
+function getWorkLink(title) {
+  const poem = allPoems.find(p => p.title === title)
+  if (poem) {
+    return `/shici/${poem.category}/${poem.id}`
+  }
+  return '/shici'
 }
 </script>
 
@@ -248,28 +1162,30 @@ function goBack() {
             代表作品
           </h2>
           <div class="works-list">
-            <span v-for="work in author.works" :key="work" class="work-tag-large">{{ work }}</span>
+            <a
+              v-for="work in author.works"
+              :key="work"
+              :href="getWorkLink(work)"
+              class="work-tag-large"
+            >{{ work }}</a>
           </div>
         </div>
 
-        <div class="section" v-if="authorBooks.length > 0">
+        <div class="section" v-if="authorPoems.length > 0">
           <h2 class="section-title">
             <span class="section-icon">📖</span>
             本站收录
           </h2>
           <div class="books-grid">
             <a
-              v-for="book in authorBooks"
-              :key="book.id"
-              :href="`/${book.category}/${book.id}`"
+              v-for="poem in authorPoems"
+              :key="`${poem.category}-${poem.id}`"
+              :href="`/shici/${poem.category}/${poem.id}`"
               class="book-card"
             >
-              <div class="book-category">{{ book.categoryName }}</div>
-              <h3 class="book-title">{{ book.title }}</h3>
-              <p class="book-desc">{{ book.desc }}</p>
-              <div class="book-tags">
-                <span v-for="tag in book.tags" :key="tag" class="book-tag">{{ tag }}</span>
-              </div>
+              <div class="book-category">{{ poem.categoryName }}</div>
+              <h3 class="book-title">{{ poem.title }}</h3>
+              <p class="book-desc">{{ poem.quote }}</p>
             </a>
           </div>
         </div>
