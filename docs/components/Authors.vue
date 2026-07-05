@@ -12,6 +12,8 @@ const dynasties = [
   { id: 'jindai', name: '晋代' },
   { id: 'nanbeichao', name: '南北朝' },
   { id: 'nanchao', name: '南朝' },
+  { id: 'beichao', name: '北朝' },
+  { id: 'suidai', name: '隋代' },
   { id: 'wudai', name: '五代' },
   { id: 'yuandai', name: '元代' },
   { id: 'yuanmomingchu', name: '元末明初' },
@@ -646,6 +648,15 @@ const authors = [
     works: ['赠秀才入军', '幽愤诗', '与山巨源绝交书', '声无哀乐论']
   },
   {
+    id: 'zhanghua',
+    name: '张华',
+    dynasty: '西晋',
+    dynastyId: 'xijin',
+    avatar: '张',
+    desc: '西晋文学家、政治家，字茂先。博学多才，著有《博物志》。其诗辞藻华丽，以《情诗》五首较有名。',
+    works: ['情诗', '博物志']
+  },
+  {
     id: 'panyue',
     name: '潘岳',
     dynasty: '西晋',
@@ -1094,6 +1105,132 @@ const authors = [
     avatar: '李',
     desc: '北宋词人，字端叔，号姑溪居士。其词风格清丽婉约，多写离情别绪，语言质朴自然。',
     works: ['卜算子·我住长江头', '谢池春·残寒销尽', '临江仙·登凌歊台']
+  },
+  {
+    id: 'shidazu',
+    name: '史达祖',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '史',
+    desc: '字邦卿，号梅溪，南宋词人。其词工于咏物，描摹物态精巧玲珑，为南宋格律词派代表之一。',
+    works: ['双双燕·咏燕', '绮罗香·咏春雨', '夜合花']
+  },
+  {
+    id: 'wuwenying',
+    name: '吴文英',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '吴',
+    desc: '字君特，号梦窗，晚号觉翁，南宋词人。其词意象绵密，辞藻华丽，时空交错，为南宋格律词派代表人物。',
+    works: ['风入松·听风听雨过清明', '八声甘州·灵岩陪庾幕诸公游', '莺啼序·残寒正欺病酒']
+  },
+  {
+    id: 'liuchenweng',
+    name: '刘辰翁',
+    dynasty: '宋代',
+    dynastyId: 'songdai',
+    avatar: '刘',
+    desc: '字会孟，号须溪，南宋遗民词人、文学批评家。其词风格沉郁悲凉，多写亡国之痛，为宋末遗民词代表人物。',
+    works: ['兰陵王·丙子送春', '柳梢青·春感', '永遇乐·璧月初晴']
+  },
+  {
+    id: 'baolinghui',
+    name: '鲍令晖',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '鲍',
+    desc: '南朝宋女诗人，鲍照之妹。才情出众，擅长抒情诗，其诗语言清丽，情感真挚细腻。',
+    works: ['题书后寄行人', '拟青青河畔草']
+  },
+  {
+    id: 'jiangyan',
+    name: '江淹',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '江',
+    desc: '南朝宋齐梁文学家，字文通。早年以文章著名，晚年才思减退，世称"江郎才尽"。其诗长于拟古，赋成就较高。',
+    works: ['别赋', '恨赋', '望荆山', '效阮公诗']
+  },
+  {
+    id: 'shenjiong',
+    name: '沈炯',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '沈',
+    desc: '南朝梁陈间文学家，字礼明。少有才名，善属文。其诗风格清丽，长于咏物抒情。',
+    works: ['咏老马', '长安少年行']
+  },
+  {
+    id: 'lusidao',
+    name: '卢思道',
+    dynasty: '北朝',
+    dynastyId: 'beichao',
+    avatar: '卢',
+    desc: '北朝隋间诗人，字子行。其诗以边塞题材见长，风格雄健，对唐代边塞诗有重要影响。',
+    works: ['从军行', '听鸣蝉篇']
+  },
+  {
+    id: 'xuedaoheng',
+    name: '薛道衡',
+    dynasty: '隋代',
+    dynastyId: 'suidai',
+    avatar: '薛',
+    desc: '隋代著名诗人，字玄卿。其诗词采华艳，情致深婉，与卢思道齐名，并称"薛卢"。',
+    works: ['昔昔盐', '人日思归']
+  },
+  {
+    id: 'yangsu',
+    name: '杨素',
+    dynasty: '隋代',
+    dynastyId: 'suidai',
+    avatar: '杨',
+    desc: '隋朝名臣、诗人，字处道。协助杨坚建立隋朝，封越国公。其诗风格清峻高远，长于山水抒情。',
+    works: ['山斋独坐赠薛内史', '赠薛播州']
+  },
+  {
+    id: 'yinkeng',
+    name: '阴铿',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '阴',
+    desc: '南朝陈诗人，字子坚。其诗长于写景，工于炼字，与何逊并称"阴何"，对唐代近体诗发展有重要影响。',
+    works: ['晚出新亭', '五洲夜发', '江津送刘光禄不及']
+  },
+  {
+    id: 'xuling',
+    name: '徐陵',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '徐',
+    desc: '南朝梁陈文学家，字孝穆。与庾信齐名，并称"徐庾"。编有《玉台新咏》，为宫体诗代表作家。',
+    works: ['关山月', '出自蓟北门行', '玉台新咏']
+  },
+  {
+    id: 'taohongjing',
+    name: '陶弘景',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '陶',
+    desc: '南朝齐梁时道教思想家、医药学家、文学家，号华阳隐居，时称"山中宰相"。其诗清淡自然。',
+    works: ['诏问山中何所有赋诗以答']
+  },
+  {
+    id: 'zhangrong',
+    name: '张融',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '张',
+    desc: '南朝宋齐文学家，字思光。其人才气纵横，文风奇诡，自成一格。',
+    works: ['别诗', '海赋']
+  },
+  {
+    id: 'xiezhuang',
+    name: '谢庄',
+    dynasty: '南朝',
+    dynastyId: 'nanchao',
+    avatar: '谢',
+    desc: '南朝宋文学家，字希逸。谢灵运之侄，文章之美，与颜延之、鲍照并称。其辞赋典丽，诗歌清雅。',
+    works: ['怀园引', '月赋']
   }
 ]
 

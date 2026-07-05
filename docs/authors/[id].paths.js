@@ -53,6 +53,7 @@ export default {
     { params: { id: 'yuanmei' } },
     { params: { id: 'yujianwu' } },
     { params: { id: 'yuxin' } },
+    { params: { id: 'zhanghua' } },
     { params: { id: 'zhangpu' } },
     { params: { id: 'zhaoyi' } },
     { params: { id: 'zhengxie' } },
@@ -118,6 +119,20 @@ export default {
     { params: { id: 'huzhiyu' } },
     { params: { id: 'dengyubin' } },
     { params: { id: 'jiangjie' } },
-    { params: { id: 'lizhiyi' } }
+    { params: { id: 'lizhiyi' } },
+    { params: { id: 'shidazu' } },
+    { params: { id: 'wuwenying' } },
+    { params: { id: 'liuchenweng' } },
+    { params: { id: 'baolinghui' } },
+    { params: { id: 'jiangyan' } },
+    { params: { id: 'shenjiong' } },
+    { params: { id: 'lusidao' } },
+    { params: { id: 'xuedaoheng' } },
+    { params: { id: 'yangsu' } },
+    { params: { id: 'yinkeng' } },
+    { params: { id: 'xuling' } },
+    { params: { id: 'taohongjing' } },
+    { params: { id: 'zhangrong' } },
+    { params: { id: 'xiezhuang' } }
   ]
 }

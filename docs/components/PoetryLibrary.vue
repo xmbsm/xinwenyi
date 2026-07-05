@@ -1017,6 +1017,306 @@ const poems = [
     tags: ['五言绝句', '悯农']
   },
   {
+    id: 'tangshi/101',
+    title: '送别',
+    author: '王维',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '下马饮君酒，问君何所之？君言不得意，归卧南山陲。',
+    tags: ['五言古诗', '送别']
+  },
+  {
+    id: 'tangshi/102',
+    title: '归嵩山作',
+    author: '王维',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '清川带长薄，车马去闲闲。流水如有意，暮禽相与还。',
+    tags: ['五言律诗', '山水']
+  },
+  {
+    id: 'tangshi/103',
+    title: '终南别业',
+    author: '王维',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '中岁颇好道，晚家南山陲。兴来每独往，胜事空自知。',
+    tags: ['五言律诗', '隐逸']
+  },
+  {
+    id: 'tangshi/104',
+    title: '庐山谣寄卢侍御虚舟',
+    author: '李白',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '我本楚狂人，凤歌笑孔丘。手持绿玉杖，朝别黄鹤楼。',
+    tags: ['七言古诗', '抒怀']
+  },
+  {
+    id: 'tangshi/105',
+    title: '梦游天姥吟留别',
+    author: '李白',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '海客谈瀛洲，烟涛微茫信难求。越人语天姥，云霞明灭或可睹。',
+    tags: ['七言古诗', '抒怀']
+  },
+  {
+    id: 'tangshi/106',
+    title: '新安吏',
+    author: '杜甫',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '客行新安道，喧呼闻点兵。借问新安吏，县小更无丁。',
+    tags: ['五言古诗', '战争']
+  },
+  {
+    id: 'tangshi/107',
+    title: '潼关吏',
+    author: '杜甫',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '士卒何草草，筑城潼关道。大城铁不如，小城万丈余。',
+    tags: ['五言古诗', '战争']
+  },
+  {
+    id: 'tangshi/108',
+    title: '茅屋为秋风所破歌',
+    author: '杜甫',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '八月秋高风怒号，卷我屋上三重茅。',
+    tags: ['七言古诗', '抒怀']
+  },
+  {
+    id: 'tangshi/109',
+    title: '问刘十九',
+    author: '白居易',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '绿蚁新醅酒，红泥小火炉。晚来天欲雪，能饮一杯无？',
+    tags: ['五言绝句', '友情']
+  },
+  {
+    id: 'tangshi/110',
+    title: '夜雪',
+    author: '白居易',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '已讶衾枕冷，复见窗户明。夜深知雪重，时闻折竹声。',
+    tags: ['五言绝句', '写雪']
+  },
+  {
+    id: 'tangshi/111',
+    title: '暮江吟',
+    author: '白居易',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '一道残阳铺水中，半江瑟瑟半江红。可怜九月初三夜，露似真珠月似弓。',
+    tags: ['七言绝句', '写景']
+  },
+  {
+    id: 'tangshi/112',
+    title: '登乐游原',
+    author: '李商隐',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '向晚意不适，驱车登古原。夕阳无限好，只是近黄昏。',
+    tags: ['五言绝句', '抒怀']
+  },
+  {
+    id: 'tangshi/113',
+    title: '贾生',
+    author: '李商隐',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '宣室求贤访逐臣，贾生才调更无伦。可怜夜半虚前席，不问苍生问鬼神。',
+    tags: ['七言绝句', '咏史']
+  },
+  {
+    id: 'tangshi/114',
+    title: '嫦娥',
+    author: '李商隐',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '云母屏风烛影深，长河渐落晓星沉。嫦娥应悔偷灵药，碧海青天夜夜心。',
+    tags: ['七言绝句', '抒怀']
+  },
+  {
+    id: 'tangshi/115',
+    title: '赠别·其一',
+    author: '杜牧',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '娉娉袅袅十三余，豆蔻梢头二月初。春风十里扬州路，卷上珠帘总不如。',
+    tags: ['七言绝句', '赠别']
+  },
+  {
+    id: 'tangshi/116',
+    title: '题乌江亭',
+    author: '杜牧',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '胜败兵家事不期，包羞忍耻是男儿。江东子弟多才俊，卷土重来未可知。',
+    tags: ['七言绝句', '咏史']
+  },
+  {
+    id: 'tangshi/117',
+    title: '酬乐天扬州初逢席上见赠',
+    author: '刘禹锡',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '巴山楚水凄凉地，二十三年弃置身。怀旧空吟闻笛赋，到乡翻似烂柯人。',
+    tags: ['七言律诗', '酬赠']
+  },
+  {
+    id: 'tangshi/118',
+    title: '再游玄都观',
+    author: '刘禹锡',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '百亩庭中半是苔，桃花净尽菜花开。种桃道士归何处，前度刘郎今独来。',
+    tags: ['七言绝句', '抒怀']
+  },
+  {
+    id: 'tangshi/119',
+    title: '与浩初上人同看山寄京华亲故',
+    author: '柳宗元',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '海畔尖山似剑铓，秋来处处割愁肠。若为化得身千亿，散上峰头望故乡。',
+    tags: ['七言绝句', '思乡']
+  },
+  {
+    id: 'tangshi/120',
+    title: '早春呈水部张十八员外',
+    author: '韩愈',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '天街小雨润如酥，草色遥看近却无。最是一年春好处，绝胜烟柳满皇都。',
+    tags: ['七言绝句', '春景']
+  },
+  {
+    id: 'tangshi/121',
+    title: '左迁至蓝关示侄孙湘',
+    author: '韩愈',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '一封朝奏九重天，夕贬潮州路八千。欲为圣明除弊事，肯将衰朽惜残年。',
+    tags: ['七言律诗', '抒怀']
+  },
+  {
+    id: 'tangshi/122',
+    title: '寻隐者不遇',
+    author: '贾岛',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '松下问童子，言师采药去。只在此山中，云深不知处。',
+    tags: ['五言绝句', '隐逸']
+  },
+  {
+    id: 'tangshi/123',
+    title: '雁门太守行',
+    author: '李贺',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '黑云压城城欲摧，甲光向日金鳞开。角声满天秋色里，塞上燕脂凝夜紫。',
+    tags: ['七言古诗', '战争']
+  },
+  {
+    id: 'tangshi/124',
+    title: '李凭箜篌引',
+    author: '李贺',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '吴丝蜀桐张高秋，空山凝云颓不流。江娥啼竹素女愁，李凭中国弹箜篌。',
+    tags: ['七言古诗', '音乐']
+  },
+  {
+    id: 'tangshi/125',
+    title: '淮上喜会梁州故人',
+    author: '韦应物',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '江汉曾为客，相逢每醉还。浮云一别后，流水十年间。',
+    tags: ['五言律诗', '友情']
+  },
+  {
+    id: 'tangshi/126',
+    title: '逢雪宿芙蓉山主人',
+    author: '刘长卿',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。',
+    tags: ['五言绝句', '写雪']
+  },
+  {
+    id: 'tangshi/127',
+    title: '离思·曾经沧海难为水',
+    author: '元稹',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '曾经沧海难为水，除却巫山不是云。取次花丛懒回顾，半缘修道半缘君。',
+    tags: ['七言绝句', '爱情']
+  },
+  {
+    id: 'tangshi/128',
+    title: '商山早行',
+    author: '温庭筠',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '晨起动征铎，客行悲故乡。鸡声茅店月，人迹板桥霜。',
+    tags: ['五言律诗', '行旅']
+  },
+  {
+    id: 'tangshi/129',
+    title: '塞下曲·月黑雁飞高',
+    author: '卢纶',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '月黑雁飞高，单于夜遁逃。欲将轻骑逐，大雪满弓刀。',
+    tags: ['五言绝句', '边塞']
+  },
+  {
+    id: 'tangshi/130',
+    title: '夜上受降城闻笛',
+    author: '李益',
+    dynasty: '唐',
+    category: 'tangshi',
+    categoryName: '唐诗',
+    content: '回乐烽前沙似雪，受降城外月如霜。不知何处吹芦管，一夜征人尽望乡。',
+    tags: ['七言绝句', '边塞']
+  },
+  {
     id: 'songci/1',
     title: '水调歌头·明月几时有',
     author: '苏轼',
@@ -2017,6 +2317,306 @@ const poems = [
     tags: ['豪放派', '抒怀']
   },
   {
+    id: 'songci/101',
+    title: '洞仙歌·冰肌玉骨',
+    author: '苏轼',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '冰肌玉骨，自清凉无汗。水殿风来暗香满。',
+    tags: ['婉约派', '咏人']
+  },
+  {
+    id: 'songci/102',
+    title: '丑奴儿·少年不识愁滋味',
+    author: '辛弃疾',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。',
+    tags: ['豪放派', '抒怀']
+  },
+  {
+    id: 'songci/103',
+    title: '清平乐·村居',
+    author: '辛弃疾',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '茅檐低小，溪上青青草。醉里吴音相媚好，白发谁家翁媪。',
+    tags: ['豪放派', '田园']
+  },
+  {
+    id: 'songci/104',
+    title: '凤凰台上忆吹箫',
+    author: '李清照',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '香冷金猊，被翻红浪，起来慵自梳头。',
+    tags: ['婉约派', '相思']
+  },
+  {
+    id: 'songci/105',
+    title: '鹤冲天·黄金榜上',
+    author: '柳永',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '黄金榜上，偶失龙头望。明代暂遗贤，如何向。',
+    tags: ['婉约派', '抒怀']
+  },
+  {
+    id: 'songci/106',
+    title: '蝶恋花·六曲阑干偎碧树',
+    author: '晏殊',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '六曲阑干偎碧树。杨柳风轻，展尽黄金缕。',
+    tags: ['婉约派', '春景']
+  },
+  {
+    id: 'songci/107',
+    title: '浪淘沙·把酒祝东风',
+    author: '欧阳修',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '把酒祝东风，且共从容。垂杨紫陌洛城东。',
+    tags: ['婉约派', '惜春']
+  },
+  {
+    id: 'songci/108',
+    title: '少年游·并刀如水',
+    author: '周邦彦',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '并刀如水，吴盐胜雪，纤手破新橙。',
+    tags: ['婉约派', '爱情']
+  },
+  {
+    id: 'songci/109',
+    title: '点绛唇·丁未冬过吴松作',
+    author: '姜夔',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '燕雁无心，太湖西畔随云去。数峰清苦。商略黄昏雨。',
+    tags: ['格律词派', '写景']
+  },
+  {
+    id: 'songci/110',
+    title: '鹧鸪天·元夕有所梦',
+    author: '姜夔',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '肥水东流无尽期，当初不合种相思。',
+    tags: ['格律词派', '相思']
+  },
+  {
+    id: 'songci/111',
+    title: '满庭芳·山抹微云',
+    author: '秦观',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '山抹微云，天连衰草，画角声断谯门。',
+    tags: ['婉约派', '离情']
+  },
+  {
+    id: 'songci/112',
+    title: '减字木兰花·天涯旧恨',
+    author: '秦观',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '天涯旧恨，独自凄凉人不问。',
+    tags: ['婉约派', '闺怨']
+  },
+  {
+    id: 'songci/113',
+    title: '秋波媚·七月十六日晚登高兴亭',
+    author: '陆游',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '秋到边城角声哀，烽火照高台。悲歌击筑，凭高酹酒，此兴悠哉。',
+    tags: ['豪放派', '抒怀']
+  },
+  {
+    id: 'songci/114',
+    title: '剔银灯·与欧阳公席上分题',
+    author: '范仲淹',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '昨夜因看蜀志，笑曹操孙权刘备。用尽机关，徒劳心力，只得三分天地。',
+    tags: ['豪放派', '咏史']
+  },
+  {
+    id: 'songci/115',
+    title: '千秋岁·数声鶗鴂',
+    author: '张先',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '数声鶗鴂，又报芳菲歇。惜春更选残红折。',
+    tags: ['婉约派', '惜春']
+  },
+  {
+    id: 'songci/116',
+    title: '阮郎归·旧香残粉似当初',
+    author: '晏几道',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '旧香残粉似当初。人情恨不如。一春犹有数行书。秋来书更疏。',
+    tags: ['婉约派', '相思']
+  },
+  {
+    id: 'songci/117',
+    title: '青玉案·凌波不过横塘路',
+    author: '贺铸',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '凌波不过横塘路，但目送、芳尘去。锦瑟华年谁与度。',
+    tags: ['婉约派', '相思']
+  },
+  {
+    id: 'songci/118',
+    title: '鹧鸪天·重过阊门万事非',
+    author: '贺铸',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '重过阊门万事非。同来何事不同归。梧桐半死清霜后，头白鸳鸯失伴飞。',
+    tags: ['婉约派', '悼亡']
+  },
+  {
+    id: 'songci/119',
+    title: '水龙吟·次韵林圣予惜春',
+    author: '晁补之',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '问春何苦匆匆，带风伴雨如驰骤。',
+    tags: ['婉约派', '惜春']
+  },
+  {
+    id: 'songci/120',
+    title: '菩萨蛮·赤阑桥尽香街直',
+    author: '陈克',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '赤阑桥尽香街直，笼街细柳娇无力。',
+    tags: ['婉约派', '春景']
+  },
+  {
+    id: 'songci/121',
+    title: '水调歌头·秋色渐将晚',
+    author: '叶梦得',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '秋色渐将晚，霜信报黄花。小窗低户深映，微路绕欹斜。',
+    tags: ['豪放派', '抒怀']
+  },
+  {
+    id: 'songci/122',
+    title: '鹧鸪天·西都作',
+    author: '朱敦儒',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '我是清都山水郎。天教分付与疏狂。曾批给雨支风券，累上留云借月章。',
+    tags: ['豪放派', '抒怀']
+  },
+  {
+    id: 'songci/123',
+    title: '贺新郎·梦绕神州路',
+    author: '张元干',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '梦绕神州路。怅秋风、连营画角，故宫离黍。',
+    tags: ['豪放派', '爱国']
+  },
+  {
+    id: 'songci/124',
+    title: '解连环·孤雁',
+    author: '张炎',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '楚江空晚。怅离群万里，恍然惊散。',
+    tags: ['格律词派', '咏物']
+  },
+  {
+    id: 'songci/125',
+    title: '眉妩·新月',
+    author: '王沂孙',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '渐新痕悬柳，淡彩穿花，依约破初暝。',
+    tags: ['格律词派', '咏物']
+  },
+  {
+    id: 'songci/126',
+    title: '双双燕·咏燕',
+    author: '史达祖',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '过春社了，度帘幕中间，去年尘冷。',
+    tags: ['格律词派', '咏物']
+  },
+  {
+    id: 'songci/127',
+    title: '风入松·听风听雨过清明',
+    author: '吴文英',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '听风听雨过清明。愁草瘗花铭。',
+    tags: ['格律词派', '相思']
+  },
+  {
+    id: 'songci/128',
+    title: '八声甘州·灵岩陪庾幕诸公游',
+    author: '吴文英',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '渺空烟四远，是何年、青天坠长星。',
+    tags: ['格律词派', '咏史']
+  },
+  {
+    id: 'songci/129',
+    title: '兰陵王·丙子送春',
+    author: '刘辰翁',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '送春去，春去人间无路。',
+    tags: ['格律词派', '亡国']
+  },
+  {
+    id: 'songci/130',
+    title: '梅花引·荆溪阻雪',
+    author: '蒋捷',
+    dynasty: '宋',
+    category: 'songci',
+    categoryName: '宋词',
+    content: '白鸥问我泊孤舟，是身留，是心留？',
+    tags: ['格律词派', '羁旅']
+  },
+  {
     id: 'yuanqu/1',
     title: '天净沙·秋思',
     author: '马致远',
@@ -2817,6 +3417,307 @@ const poems = [
     tags: ['散曲', '送别']
   },
   {
+    id: 'yuanqu/81',
+    title: '寿阳曲·山市晴岚',
+    author: '马致远',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '花村外，草店西，晚霞明雨收天霁。四围山一竿残照里，锦屏风又添铺翠。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/82',
+    title: '折桂令·九日',
+    author: '张可久',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '对青山强整乌纱。归雁横秋，倦客思家。翠袖殷勤，金杯错落，玉手琵琶。人老去西风白发，蝶愁来明日黄花。回首天涯，一抹斜阳，数点寒鸦。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/83',
+    title: '水仙子·重观瀑布',
+    author: '乔吉',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '天机织罢月梭闲，石壁高垂雪练寒。冰丝带雨悬霄汉，几千年晒未干。露华凉人怯衣单。似白虹饮涧，下玉龙扑山，上欲登天。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/84',
+    title: '雁儿落兼得胜令·退隐',
+    author: '张养浩',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '云来山更佳，云去山如画，山因云晦明，云共山高下。倚仗立云沙，回首见山家，野鹿眠山草，山猿戏野花。云霞，我爱山无价，看时，行踏，云山也爱咱。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/85',
+    title: '碧玉箫·笑语喧哗',
+    author: '关汉卿',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '笑语喧哗，墙内甚人家？度柳穿花，院后那娇娃。媚孜孜整绛纱，颤巍巍插翠花。可喜煞，巧笔难描画。他，困倚在秋千架。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/86',
+    title: '阳春曲·知几',
+    author: '白朴',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '知荣知辱牢缄口，谁是谁非暗点头。诗书丛里且淹留。闲袖手，贫煞也风流。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/87',
+    title: '殿前欢·观音山眠松',
+    author: '徐再思',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '老苍龙，避乖高卧此山中。岁寒心不肯为梁栋，翠蜿蜒俯仰相从。秦皇旧日封，靖节何年种？丁固当时梦。半溪明月，一枕清风。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/88',
+    title: '蟾宫曲·邺下怀古',
+    author: '卢挚',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '笑征衣伏枥悲吟，才鼎足功成，铜爵春深。软动歌残，无愁梦断，明月西沉。算只有韩家昼锦，对家山辉映来今。乔木空林，几度西风，憾慨登临。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/89',
+    title: '满庭芳·看岳王传',
+    author: '周德清',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '披文握武，建中兴庙宇，载青史图书。功成却被权臣妒，正落奸谋。闪杀人望旌节中原士夫，误杀人弃丘陵南渡銮舆。钱塘路，愁风怨雨，长是洒西湖。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/90',
+    title: '阳春曲',
+    author: '姚燧',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '笔头风月时时过，眼底儿曹渐渐多。有人问我事如何？人海阔，无日不风波。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/91',
+    title: '梧叶儿·春思',
+    author: '吴西逸',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '芳草思南浦，行云梦楚阳，流水恨潇湘。花底春莺燕，钗头金凤凰，被面绣鸳鸯：是几等儿眠思梦想！',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/92',
+    title: '凉亭乐·叹世',
+    author: '阿里西瑛',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '金乌玉兔走如梭，看看的老了人呵。有那等不识事的痴呆待怎么？急回头迟了些儿个。你试看凌烟阁上，功名不在我。则不如对酒当歌对酒当歌且快活，无忧愁，安乐窝。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/93',
+    title: '阳春曲·春景',
+    author: '胡祗遹',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '几支红雪墙头杏，数点青山屋上屏。一春能得几晴明？三月景，宜醉不宜醒。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/94',
+    title: '寄生草·饮',
+    author: '邓玉宾',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '长醉后方何碍，不醒时有甚思。糟腌两个功名字，醅渰千古兴亡事，曲埋万丈虹霓志。不达时皆笑屈原非，但知音尽说陶潜是。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/95',
+    title: '殿前欢·楚怀古',
+    author: '贯云石',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '楚怀王，忠臣跳入汨罗江。《离骚》读罢空惆怅，日月同光。伤心来笑一场，笑你个三闾强，为甚不身心放？沧浪污你，你污沧浪。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/96',
+    title: '蟾宫曲·梦中作',
+    author: '郑光祖',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '半窗幽梦微茫，歌罢钱塘，赋罢高唐。风入罗帏，爽入疏棂，月照纱窗。缥缈见梨花淡妆，依稀闻兰麝余香。唤起思量，待不思量，怎不思量。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/97',
+    title: '喜春来·未遂',
+    author: '曾瑞',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '功名两字生差错，回首萧萧白发多。人生醒后梦南柯。羞甚么，交免过后思量。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/98',
+    title: '哨遍·高祖还乡',
+    author: '睢景臣',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '[哨遍]社长排门告示，但有的差使无推故，这差使不寻俗。一壁厢纳草也根，一边又要差夫，索应付。又言是车驾，都说是銮舆，今日还乡故。王乡老执定瓦台盘，赵忙郎抱着酒葫芦。新刷来的头巾，恰糨来的绸衫，畅好是妆幺大户。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/99',
+    title: '殿前欢·道情',
+    author: '刘时中',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '醉颜酡，水边林下且婆娑。醉时拍手随腔和，一曲狂歌。除渔樵那两个，无灾祸。此一着谁参破？南柯梦绕，梦绕南柯。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/100',
+    title: '楚天遥过清江引·送春',
+    author: '薛昂夫',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '[楚天遥]花开人正欢，花落春如醉。春醉有时醒，人老欢无会。长江三月天，万点杨花落。一鸟不鸣山，孤莺啼向水。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/101',
+    title: '沉醉东风·归田',
+    author: '汪元亨',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '远城市人稠物穰，老渔樵水远山长。虽无万贯财，却有千间丈。伴清风明月闲看。傲杀人间万户侯，成就林泉一叟苍。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/102',
+    title: '庆东原·西皋亭适兴',
+    author: '马九皋',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '兴来乘醉便扶筇，山可家兮林可同。水声溅溅流不断，山色重重青倚空。一椽茅屋，半亩方塘，自得其乐，谁能似我翁？',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/103',
+    title: '沉醉东风·秋日湘阴道中',
+    author: '赵善庆',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '山对面蓝堆翠岫，草齐腰绿染沙洲。傲霜橘柚青，带雨芙蓉瘦，写一段秋光如昼。抱水撑山两岸揫，真个是江山如绣。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/104',
+    title: '落梅风·咏雪',
+    author: '张鸣善',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '漫天坠，扑地飞，白占许多田地。冻杀万民都是你，难道国家瑞！',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/105',
+    title: '水仙子·自足',
+    author: '杨朝英',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '杏花村里旧生涯，瘦竹疏梅处士家。深耕浅种收成罢。酒新篘，鱼旋打，有鸡豚春笋冬瓜。客来时，三杯两盏，便可当茶。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/106',
+    title: '红绣鞋·客况',
+    author: '宋方壶',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '雨潇潇一帘风劲，昏惨惨半点灯明。地炉无火冷如冰。隔着窗儿叫，谁可便答应？空教人立不定、坐不定。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/107',
+    title: '折桂令·赠胡存善',
+    author: '王举之',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '上都来主是风流，诗句留传，东海西州。天下文章，胡存善四海交游。虫鱼老去，兔管秃休。有斗酒双鱼，受用一襟秋。问甚么鳞角，但闻处是珠楼。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/108',
+    title: '山坡羊·叹世',
+    author: '陈草庵',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '晨鸡初叫，昏鸦争噪。那个不去红尘闹。路迢迢，水迢迢，功名尽在长安道。今日少年明日老。山，依旧好；水，依旧好。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/109',
+    title: '水仙子·舟中',
+    author: '孙周卿',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '孤舟夜泊洞庭边，灯火青荧对客眠。朔风吹送潇潇雨，掩篷窗，怯春寒，悄无言。一任他，浪拍船，我贪睡稳。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuanqu/110',
+    title: '江儿水·叹世',
+    author: '王仲元',
+    dynasty: '元',
+    category: 'yuanqu',
+    categoryName: '元曲',
+    content: '谁待要赤心儿为彼，到做了画虎不成反类。空惹得傍人，取笑一场耻。本是好人，从他做起。命也何如，时也何如，是非得失。且优游，从今止，那的是前程万里。',
+    tags: ['精校']
+  },
+
+  {
     id: 'shijing/1',
     title: '关雎',
     author: '佚名',
@@ -3567,6 +4468,307 @@ const poems = [
     tags: ['国风', '颂德']
   },
   {
+    id: 'shijing/76',
+    title: '燕燕',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '燕燕于飞，差池其羽。之子于归，远送于野。瞻望弗及，泣涕如雨。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/77',
+    title: '日月',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '日居月诸，照临下土。乃如之人兮，逝不古处。胡能有定？宁不我顾。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/78',
+    title: '终风',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '终风且暴，顾我则笑，谑浪笑敖，中心是悼。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/79',
+    title: '凯风',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '凯风自南，吹彼棘心。棘心夭夭，母氏劬劳。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/80',
+    title: '雄雉',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '雄雉于飞，泄泄其羽。我之怀矣，自诒伊阻。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/81',
+    title: '匏有苦叶',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '匏有苦叶，济有深涉。深则厉，浅则揭。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/82',
+    title: '谷风',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '习习谷风，以阴以雨。黾勉同心，不宜有怒。采葑采菲，无以下体？德音莫违，及尔同死。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/83',
+    title: '式微',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '式微式微，胡不归？微君之故，胡为乎中露！',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/84',
+    title: '旄丘',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '旄丘之葛兮，何诞之节兮。叔兮伯兮，何多日也？',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/85',
+    title: '柏舟',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '泛彼柏舟，在彼中河。髧彼两髦，实维我仪。之死矢靡它。母也天只！不谅人只！',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/86',
+    title: '墙有茨',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '墙有茨，不可扫也。中冓之言，不可道也。所可道也，言之丑也。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/87',
+    title: '桑中',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '爰采唐矣？沬之乡矣。云谁之思？美孟姜矣。期我乎桑中，要我乎上宫，送我乎淇之上矣。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/88',
+    title: '鹑之奔奔',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '鹑之奔奔，鹊之彊彊。人之无良，我以为兄！',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/89',
+    title: '淇奥',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '瞻彼淇奥，绿竹猗猗。有匪君子，如切如磋，如琢如磨。瑟兮僩兮，赫兮咺兮。有匪君子，终不可谖兮！',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/90',
+    title: '考槃',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '考槃在涧，硕人之宽。独寐寤言，永矢弗谖。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/91',
+    title: '硕人',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '硕人其颀，衣锦褧衣。齐侯之子，卫侯之妻。东宫之妹，邢侯之姨，谭公维私。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/92',
+    title: '竹竿',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '籊籊竹竿，以钓于淇。岂不尔思？远莫致之。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/93',
+    title: '芄兰',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '芄兰之支，童子佩觿。虽则佩觿，能不我知。容兮遂兮，垂带悸兮。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/94',
+    title: '河广',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '谁谓河广？一苇杭之。谁谓宋远？跂予望之。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/95',
+    title: '有狐',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '有狐绥绥，在彼淇梁。心之忧矣，之子无裳。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/96',
+    title: '中谷有蓷',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '中谷有蓷，暵其乾矣。有女仳离，嘅其叹矣。嘅其叹矣，遇人之艰难矣。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/97',
+    title: '兔爰',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '有兔爰爰，雉离于罗。我生之初，尚无为；我生之后，逢此百罹。尚寐无吪！',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/98',
+    title: '采葛',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '彼采葛兮，一日不见，如三月兮！',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/99',
+    title: '大车',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '大车槛槛，毳衣如菼。岂不尔思？畏子不敢。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/100',
+    title: '丘中有麻',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '丘中有麻，彼留子嗟。彼留子嗟，将其来施施。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/101',
+    title: '缁衣',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '缁衣之宜兮，敝予又改为兮。适子之馆兮。还予授子之粲兮。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/102',
+    title: '将仲子',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '将仲子兮，无逾我里，无折我树杞。岂敢爱之？畏我父母。仲可怀也，父母之言，亦可畏也。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/103',
+    title: '叔于田',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '叔于田，巷无居人。岂无居人？不如叔也。洵美且仁。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/104',
+    title: '大叔于田',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '叔于田，乘乘马。执辔如组，两骖如舞。叔在薮，火烈具举。襢裼暴虎，献于公所。将叔勿狃，戒其伤女。',
+    tags: ['精校']
+  },
+  {
+    id: 'shijing/105',
+    title: '清人',
+    author: '佚名',
+    dynasty: '先秦',
+    category: 'shijing',
+    categoryName: '诗经',
+    content: '清人在彭，驷介旁旁。二矛重英，河上乎翱翔。',
+    tags: ['精校']
+  },
+
+  {
     id: 'chuci/1',
     title: '离骚',
     author: '屈原',
@@ -4265,6 +5467,306 @@ const poems = [
     categoryName: '楚辞',
     content: '屈原既放，三年不得复见。竭知尽忠而蔽障于谗。心烦虑乱，不知所从。',
     tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/71',
+    title: '九章·惜诵',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '惜诵以致愍兮，发愤以抒情。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/72',
+    title: '九章·怀沙',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '滔滔孟夏兮，草木莽莽。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/73',
+    title: '九章·惜往日',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '惜往日之曾信兮，受命诏以昭时。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/74',
+    title: '九章·悲回风',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '悲回风之摇蕙兮，心冤结而内伤。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/75',
+    title: '大招',
+    author: '景差',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '青春受谢，白日昭只。',
+    tags: ['楚辞', '招魂']
+  },
+  {
+    id: 'chuci/76',
+    title: '天问·节选二',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '崑崙縣圃，其凗安在？',
+    tags: ['楚辞', '咏史']
+  },
+  {
+    id: 'chuci/77',
+    title: '天问·节选三',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '不任汩鴻，何以尚之？',
+    tags: ['楚辞', '咏史']
+  },
+  {
+    id: 'chuci/78',
+    title: '天问·节选四',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '禹之力獻功，降省下土四方。',
+    tags: ['楚辞', '咏史']
+  },
+  {
+    id: 'chuci/79',
+    title: '天问·节选五',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '舜閔在家，父何以鰥？',
+    tags: ['楚辞', '咏史']
+  },
+  {
+    id: 'chuci/80',
+    title: '天问·节选六',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '勳闔夢生，少離散亡。',
+    tags: ['楚辞', '咏史']
+  },
+  {
+    id: 'chuci/81',
+    title: '七谏·怨世',
+    author: '东方朔',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '怨世之沈浊兮，士皆蔽而掩明。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/82',
+    title: '七谏·怨思',
+    author: '东方朔',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '居愁勤其谁告兮，独永思而忧悲。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/83',
+    title: '七谏·自悲',
+    author: '东方朔',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '自悲衣之不和兮，遭世之不一。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/84',
+    title: '七谏·哀命',
+    author: '东方朔',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '哀命之不长兮，伤幼童之遭殃。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/85',
+    title: '七谏·谬谏',
+    author: '东方朔',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '谬谏者谁言兮，和寡者其音悲。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/86',
+    title: '九怀·尊嘉',
+    author: '王褒',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '抱昭华兮宝璋，欲献之兮无由。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/87',
+    title: '九怀·思忠',
+    author: '王褒',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '登九灵兮游神，静淑清兮太微。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/88',
+    title: '九怀·陶壅',
+    author: '王褒',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '览杳杳兮世惟，余惆怅兮何归！',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/89',
+    title: '九怀·株昭',
+    author: '王褒',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '天门兮多峻，乘龙兮飞腾。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/90',
+    title: '九叹·离世',
+    author: '刘向',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '离世兮远游，乘浮云兮历八极。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/91',
+    title: '九叹·怨思',
+    author: '刘向',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '惟郁郁之忧思兮，独长叹而永悲。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/92',
+    title: '九叹·忧苦',
+    author: '刘向',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '忧苦兮无告，思心兮绵绵。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/93',
+    title: '九叹·远游',
+    author: '刘向',
+    dynasty: '西汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '悲时俗之迫阨兮，愿轻举而远游。',
+    tags: ['楚辞', '游仙']
+  },
+  {
+    id: 'chuci/94',
+    title: '九思·怨上',
+    author: '王逸',
+    dynasty: '东汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '嗟嗟兮悲夫，冤屈兮谁告。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/95',
+    title: '九思·悯上',
+    author: '王逸',
+    dynasty: '东汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '悯上兮不明，贤士兮幽隐。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/96',
+    title: '九思·悼乱',
+    author: '王逸',
+    dynasty: '东汉',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '悼乱世兮纷浊，哀民生兮多艰。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/97',
+    title: '招魂·节选二',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '魂兮归来！入修门些。',
+    tags: ['楚辞', '招魂']
+  },
+  {
+    id: 'chuci/98',
+    title: '九辩·节选二',
+    author: '宋玉',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '皇天平分四时兮，窃独悲此廪秋。',
+    tags: ['楚辞', '悲秋']
+  },
+  {
+    id: 'chuci/99',
+    title: '离骚·节选六',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '女嬃之婵媛兮，申申其詈予。',
+    tags: ['楚辞', '抒怀']
+  },
+  {
+    id: 'chuci/100',
+    title: '远游·节选',
+    author: '屈原',
+    dynasty: '战国',
+    category: 'chuci',
+    categoryName: '楚辞',
+    content: '顺凯风以从游兮，至南巢而一息。',
+    tags: ['楚辞', '游仙']
   },
   {
     id: 'hanweishi/1',
@@ -5067,6 +6569,306 @@ const poems = [
     tags: ['五言古诗', '田园']
   },
   {
+    id: 'hanweishi/81',
+    title: '却东西门行',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '鸿雁出塞北，乃在无人乡。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/82',
+    title: '精列',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '厥初生，造化之陶物，莫不有终期。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/83',
+    title: '度关山',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '天地间，人为贵。',
+    tags: ['乐府', '说理']
+  },
+  {
+    id: 'hanweishi/84',
+    title: '对酒',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '对酒歌，太平时，吏不呼门。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/85',
+    title: '董逃歌词',
+    author: '曹操',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '德行不亏缺，变故自难常。',
+    tags: ['乐府', '咏史']
+  },
+  {
+    id: 'hanweishi/86',
+    title: '令诗',
+    author: '曹丕',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '丧乱悠悠过百年，曹操专命建魏权。',
+    tags: ['七言古诗', '咏史']
+  },
+  {
+    id: 'hanweishi/87',
+    title: '于明津作诗',
+    author: '曹丕',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '遥遥山上亭，皎皎云间星。',
+    tags: ['五言古诗', '抒怀']
+  },
+  {
+    id: 'hanweishi/88',
+    title: '于玄武陂作诗',
+    author: '曹丕',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '兄弟共行游，驱车出西城。',
+    tags: ['五言古诗', '抒怀']
+  },
+  {
+    id: 'hanweishi/89',
+    title: '野田黄雀行',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '高树多悲风，海水阔其深。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/90',
+    title: '箜篌引',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '置酒高殿上，亲交从我游。',
+    tags: ['乐府', '宴饮']
+  },
+  {
+    id: 'hanweishi/91',
+    title: '怨歌行',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '为君既不易，为臣良独难。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/92',
+    title: '泰山梁甫行',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '八方各异气，千里殊风雨。',
+    tags: ['乐府', '叙事']
+  },
+  {
+    id: 'hanweishi/93',
+    title: '当墙欲高行',
+    author: '曹植',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '龙欲升天须浮云，人之仕进待中人。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/94',
+    title: '驾出北郭门行',
+    author: '阮瑀',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '驾出北郭门，马樊不肯驰。',
+    tags: ['乐府', '叙事']
+  },
+  {
+    id: 'hanweishi/95',
+    title: '赠从弟',
+    author: '刘桢',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '亭亭山上松，瑟瑟谷中风。',
+    tags: ['赠答', '咏物']
+  },
+  {
+    id: 'hanweishi/96',
+    title: '室思',
+    author: '徐干',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '浮云何洋洋，愿因通我词。',
+    tags: ['闺怨', '抒怀']
+  },
+  {
+    id: 'hanweishi/97',
+    title: '侍五官中郎将建章台集诗',
+    author: '应玚',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '朝雁鸣云中，音响一何哀！',
+    tags: ['赠答', '抒怀']
+  },
+  {
+    id: 'hanweishi/98',
+    title: '悲愤诗',
+    author: '蔡琰',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '汉季失权柄，董卓乱天常。',
+    tags: ['叙事', '抒怀']
+  },
+  {
+    id: 'hanweishi/99',
+    title: '鹦鹉赋',
+    author: '祢衡',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '惟西域之灵鸟兮，挺自然之奇姿。',
+    tags: ['赋', '咏物']
+  },
+  {
+    id: 'hanweishi/100',
+    title: '临终诗',
+    author: '孔融',
+    dynasty: '汉',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '言多令事败，器漏苦不密。',
+    tags: ['抒怀', '说理']
+  },
+  {
+    id: 'hanweishi/101',
+    title: '咏怀诗·昔日繁华子',
+    author: '阮籍',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '昔日繁华子，安陵与龙阳。',
+    tags: ['咏怀', '抒怀']
+  },
+  {
+    id: 'hanweishi/102',
+    title: '咏怀诗·天马出西北',
+    author: '阮籍',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '天马出西北，由来从东道。',
+    tags: ['咏怀', '抒怀']
+  },
+  {
+    id: 'hanweishi/103',
+    title: '与山巨源绝交书（选段）',
+    author: '嵇康',
+    dynasty: '魏',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '吾少加孤露，母兄见骄，不涉经学。',
+    tags: ['散文', '抒怀']
+  },
+  {
+    id: 'hanweishi/104',
+    title: '短歌行',
+    author: '傅玄',
+    dynasty: '西晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '长安高城，层楼亭亭。',
+    tags: ['乐府', '抒怀']
+  },
+  {
+    id: 'hanweishi/105',
+    title: '豫章行',
+    author: '傅玄',
+    dynasty: '西晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '白杨初生时，乃在豫章山。',
+    tags: ['乐府', '咏物']
+  },
+  {
+    id: 'hanweishi/106',
+    title: '情诗·其一',
+    author: '张华',
+    dynasty: '西晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '清风动帷帘，晨月照幽房。',
+    tags: ['闺怨', '抒怀']
+  },
+  {
+    id: 'hanweishi/107',
+    title: '娇女诗',
+    author: '左思',
+    dynasty: '西晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '吾家有娇女，皎皎颇白皙。',
+    tags: ['咏物', '叙事']
+  },
+  {
+    id: 'hanweishi/108',
+    title: '赴洛道中作',
+    author: '陆机',
+    dynasty: '西晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '总辔登长路，呜咽辞密亲。',
+    tags: ['行役', '抒怀']
+  },
+  {
+    id: 'hanweishi/109',
+    title: '重赠卢谌',
+    author: '刘琨',
+    dynasty: '西晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '握中有悬璧，本自荆山璆。',
+    tags: ['赠答', '抒怀']
+  },
+  {
+    id: 'hanweishi/110',
+    title: '游仙诗·其一',
+    author: '郭璞',
+    dynasty: '东晋',
+    category: 'hanweishi',
+    categoryName: '汉魏诗',
+    content: '京华游侠窟，山林隐遁栖。',
+    tags: ['游仙', '抒怀']
+  },
+  {
     id: 'yuefu/1',
     title: '孔雀东南飞',
     author: '佚名',
@@ -5867,6 +7669,307 @@ const poems = [
     tags: ['乐府', '英雄']
   },
   {
+    id: 'yuefu/81',
+    title: '上山采蘼芜',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '上山采蘼芜，下山逢故夫。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/82',
+    title: '古歌',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '秋风萧萧愁杀人，出亦愁，入亦愁。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/83',
+    title: '古艳歌',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '茕茕白兔，东走西顾。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/84',
+    title: '刺巴郡守诗',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '狗吠何喧喧，有吏来在门。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/85',
+    title: '君马黄',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '君马黄，臣马苍，二马同逐臣马良。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/86',
+    title: '芳树',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '芳树不结株，结株不结叶。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/87',
+    title: '临高台',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '临高台以轩，下有清水清且寒。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/88',
+    title: '远如期',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '远如期，益如寿，处天左侧，大乐万岁，与天无极。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/89',
+    title: '企喻歌',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '男儿欲作健，结伴不须多。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/90',
+    title: '琅琊王歌',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '新买五尺刀，悬著中梁柱。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/91',
+    title: '雀劳利歌辞',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '雨雪霏霏雀劳利，长觜饱满短觜饥。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/92',
+    title: '陇头流水歌辞',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '陇头流水，流离山下。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/93',
+    title: '隔谷歌',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '兄为俘虏受困辱，骨露力疲食不足。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/94',
+    title: '梁甫吟',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '步出齐城门，遥望荡阴里。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/95',
+    title: '艳歌何尝行',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '飞来双白鹄，乃知西北来。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/96',
+    title: '伤歌行',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '昭昭素明月，辉光烛我床。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/97',
+    title: '朱鹭',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '朱鹭，鱼以乌。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/98',
+    title: '桓灵时童谣',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '举秀才，不知书。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/99',
+    title: '城中谣',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '城中好高髻，四方高一尺。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/100',
+    title: '箜篌谣',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '结交在相知，骨肉何必亲。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/101',
+    title: '董逃行',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '吾欲上谒从高山，山头危险大石颠。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/102',
+    title: '雉朝飞操',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '雉朝飞兮鸣相和，雌雄群飞于山阿。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/103',
+    title: '捉搦歌',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '谁家女子能行步，反著裌褝后裙露。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/104',
+    title: '慕容垂歌辞',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '慕容攀墙视，吴军无边岸。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/105',
+    title: '地驱歌辞',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '驱羊入谷，自羊在前。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/106',
+    title: '黄淡思歌辞',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '绿丝何葳蕤，逐郎归郎郎。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/107',
+    title: '紫骝马歌辞',
+    author: '佚名',
+    dynasty: '北朝',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '烧火烧野田，野鸭飞上天。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/108',
+    title: '上之回',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '上之回，所中益。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/109',
+    title: '雉子班',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '雉子班，班之于雉卢。',
+    tags: ['精校']
+  },
+  {
+    id: 'yuefu/110',
+    title: '艾如张',
+    author: '佚名',
+    dynasty: '汉',
+    category: 'yuefu',
+    categoryName: '乐府诗',
+    content: '艾而张罗，于汙于沮。',
+    tags: ['精校']
+  },
+
+  {
     id: 'nanbeichao/1',
     title: '登池上楼',
     author: '谢灵运',
@@ -6617,6 +8720,307 @@ const poems = [
     tags: ['骈文', '山水']
   },
   {
+    id: 'nanbeichao/76',
+    title: '游南亭',
+    author: '谢灵运',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '时竟夕澄霁，云归日西驰。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/77',
+    title: '入彭蠡湖口',
+    author: '谢灵运',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '客游倦水宿，风潮难具论。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/78',
+    title: '岁暮',
+    author: '谢灵运',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '殷忧不能寐，苦此夜难颓。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/79',
+    title: '直中书省',
+    author: '谢朓',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '紫殿肃阴阴，彤庭赫弘敞。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/80',
+    title: '观朝雨',
+    author: '谢朓',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '朔风飘夜雨，清旦交密云。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/81',
+    title: '秋夜',
+    author: '谢朓',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '秋夜促织鸣，南邻捣衣急。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/82',
+    title: '赠故人马子乔',
+    author: '鲍照',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '寒灰灭更燃，夕华晨更鲜。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/83',
+    title: '发后渚',
+    author: '鲍照',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '首秋及初冬，季月寒气盛。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/84',
+    title: '拟咏怀·其一',
+    author: '庾信',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '摇落秋为气，凄凉多怨情。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/85',
+    title: '哀江南赋（节选）',
+    author: '庾信',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '日暮途远，人间何世！将军一去，大树飘零；壮士不还，寒风萧瑟。荆璧睨柱，受连城而见欺；载书横阶，捧珠盘而不定。钟仪君子，入就南冠之囚；季孙行人，留守西河之馆。申包胥之顿地，碎之以首；蔡威公之泪尽，加之以血。钓台移柳，非玉关之可望；华亭鹤唳，岂河桥之可闻！',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/86',
+    title: '拟咏怀·榆关断音信',
+    author: '庾信',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '榆关断音信，汉使绝经过。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/87',
+    title: '新安江至清浅深见底贻京邑游好',
+    author: '沈约',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '眷言访舟客，兹川信可珍。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/88',
+    title: '送韦司马别',
+    author: '何逊',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '送别临曲渚，征人慕前侣。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/89',
+    title: '江津送刘光禄不及',
+    author: '阴铿',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '依然临江渚，长望倚河津。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/90',
+    title: '晚出新亭',
+    author: '阴铿',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '大江一浩荡，离悲足几重。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/91',
+    title: '五洲夜发',
+    author: '阴铿',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '夜江雾里阔，新月迥中明。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/92',
+    title: '关山月',
+    author: '徐陵',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '关山三五月，客子忆秦川。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/93',
+    title: '出自蓟北门行',
+    author: '徐陵',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '蓟北聊长望，黄昏心独愁。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/94',
+    title: '奉和春夜应令',
+    author: '庾肩吾',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '春牖对芳洲，珠帘新上钩。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/95',
+    title: '效阮公诗',
+    author: '江淹',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '若木出海外，本自丹水阴。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/96',
+    title: '望荆山',
+    author: '江淹',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '奉义至江汉，始知楚塞长。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/97',
+    title: '诏问山中何所有赋诗以答',
+    author: '陶弘景',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '山中何所有，岭上多白云。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/98',
+    title: '别诗',
+    author: '张融',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '白云山上尽，清风松下歇。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/99',
+    title: '怀园引（节选）',
+    author: '谢庄',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '鸿飞从万里，飞飞河岱起。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/100',
+    title: '题书后寄行人',
+    author: '鲍令晖',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '自君之出矣，临轩不解颜。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/101',
+    title: '咏老马',
+    author: '沈炯',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '昔日从戎阵，流汗几东西。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/102',
+    title: '从军行（节选）',
+    author: '卢思道',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '朔方烽火照甘泉，长安飞将出祁连。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/103',
+    title: '昔昔盐',
+    author: '薛道衡',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '垂柳覆金堤，蘼芜叶复齐。',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/104',
+    title: '人日思归',
+    author: '薛道衡',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '入春才七日，',
+    tags: ['精校']
+  },
+  {
+    id: 'nanbeichao/105',
+    title: '山斋独坐赠薛内史',
+    author: '杨素',
+    dynasty: '南北朝',
+    category: 'nanbeichao',
+    categoryName: '南北朝诗',
+    content: '居山四望阻，风云竟朝夕。',
+    tags: ['精校']
+  },
+
+  {
     id: 'wudai/1',
     title: '虞美人·春花秋月何时了',
     author: '李煜',
@@ -7266,6 +9670,307 @@ const poems = [
     content: '晴雪小园春未到，池面梅花粉早。数枝萼，几枝开，待得春来花更好。',
     tags: ['婉约派', '春景']
   },
+  {
+    id: 'wudai/66',
+    title: '虞美人·风回小院庭芜绿',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '风回小院庭芜绿，柳眼春相续。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/67',
+    title: '浪淘沙·往事只堪哀',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '往事只堪哀，对景难排。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/68',
+    title: '一斛珠·晓妆初过',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '晓妆初过，沉檀轻注些儿个。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/69',
+    title: '捣练子·云鬓乱',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '云鬓乱，晚妆残，带恨眉儿远岫攒。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/70',
+    title: '阮郎归·东风吹水日衔山',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '东风吹水日衔山，春来长是闲。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/71',
+    title: '临江仙·樱桃落尽春归去',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '樱桃落尽春归去，蝶翻金粉双飞。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/72',
+    title: '浣溪沙·红日已高三丈透',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '红日已高三丈透，金炉次第添香兽。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/73',
+    title: '柳枝·风情渐老见春羞',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '风情渐老见春羞，到处消魂感旧游。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/74',
+    title: '谢新恩·冉冉秋光留不住',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '冉冉秋光留不住，满阶红叶暮。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/75',
+    title: '谢新恩·樱花落尽阶前月',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '樱花落尽阶前月，象床愁倚玲珑。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/76',
+    title: '谢新恩·庭空客散人归后',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '庭空客散人归后，画堂半掩朱扉。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/77',
+    title: '采桑子·亭前春逐红英尽',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '亭前春逐红英尽，舞态徘徊。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/78',
+    title: '菩萨蛮·铜簧韵脆锵寒竹',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '铜簧韵脆锵寒竹，新声慢奏移纤玉。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/79',
+    title: '长相思·云一緺',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '云一緺，玉一梭，澹澹衫儿薄薄罗。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/80',
+    title: '浣溪沙·玉碗冰寒滴露华',
+    author: '李煜',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '玉碗冰寒滴露华，粉融香雪透轻纱。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/81',
+    title: '临江仙·秣陵江上多离别',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '秣陵江上多离别，雨晴芳草烟深。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/82',
+    title: '蝶恋花·几度凤楼同饮宴',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '几度凤楼同饮宴，此夕相逢，却胜当时见。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/83',
+    title: '蝶恋花·窗外寒鸡天欲曙',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '窗外寒鸡天欲曙，香印成灰，坐起浑无绪。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/84',
+    title: '采桑子·寒蝉欲报三秋候',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '寒蝉欲报三秋候，寂静幽斋。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/85',
+    title: '采桑子·马嘶人语春风岸',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '马嘶人语春风岸，芳草绵绵。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/86',
+    title: '菩萨蛮·梅花吹入谁家笛',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '梅花吹入谁家笛，行云半夜凝空碧。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/87',
+    title: '酒泉子·庭下花飞',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '庭下花飞，月照妆楼春事晚。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/88',
+    title: '归国遥·何处笛',
+    author: '冯延巳',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '何处笛？深夜梦回情脉脉，竹风檐雨寒窗隔。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/89',
+    title: '菩萨蛮·红楼别夜堪惆怅',
+    author: '韦庄',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '红楼别夜堪惆怅，香灯半卷流苏帐。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/90',
+    title: '思帝乡·云髻坠',
+    author: '韦庄',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '云髻坠，凤钗垂，髻坠钗垂无力，枕函欹。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/91',
+    title: '浣溪沙·清晓妆成寒食天',
+    author: '韦庄',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '清晓妆成寒食天。柳球斜袅间花钿。卷帘直出画堂前。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/92',
+    title: '谒金门·春漏促',
+    author: '韦庄',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '春漏促，金烬暗挑残烛。一夜帘前风撼竹，梦魂相断续。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/93',
+    title: '菩萨蛮·洛阳城里春光好',
+    author: '韦庄',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '洛阳城里春光好，洛阳才子他乡老。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/94',
+    title: '菩萨蛮·杏花含露团香雪',
+    author: '温庭筠',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '杏花含露团香雪，绿杨陌上多离别。',
+    tags: ['精校']
+  },
+  {
+    id: 'wudai/95',
+    title: '更漏子·星斗稀',
+    author: '温庭筠',
+    dynasty: '五代',
+    category: 'wudai',
+    categoryName: '五代词',
+    content: '星斗稀，钟鼓歇，帘外晓莺残月。',
+    tags: ['精校']
+  },
+
   {
     id: 'mingqingshi/1',
     title: '石灰吟',
@@ -8115,7 +10820,307 @@ const poems = [
     categoryName: '明清诗词',
     content: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳。',
     tags: ['词', '悼亡']
-  }
+  },
+  {
+    id: 'mingqingshi/86',
+    title: '观书',
+    author: '于谦',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '书卷多情似故人，晨昏忧乐每相亲。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/87',
+    title: '荒村',
+    author: '于谦',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '村落甚荒凉，年年苦旱蝗。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/88',
+    title: '五月十九日大雨',
+    author: '刘基',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '风驱急雨洒高城，云压轻雷殷地声。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/89',
+    title: '精卫',
+    author: '夏完淳',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '北风荡天地，有鸟鸣空林。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/90',
+    title: '登盘山绝顶',
+    author: '戚继光',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '霜角一声草木哀，云头对起石门开。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/91',
+    title: '转应曲·银烛',
+    author: '杨慎',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '银烛。银烛。锦帐罗帏影独。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/92',
+    title: '除夜太原寒甚',
+    author: '于谦',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '寄语天涯客，轻寒底用愁。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/93',
+    title: '牧牛词',
+    author: '高启',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '尔牛角弯环，我牛尾秃速。共拈短笛与长鞭，南亩东冈去相逐。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/94',
+    title: '鱼服',
+    author: '夏完淳',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '投笔新从定远侯，登坛誓饮月氏头。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/95',
+    title: '古戍',
+    author: '刘基',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '古戍连山火，新城殷地笳。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/96',
+    title: '卖花词',
+    author: '高启',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '绿盆小树枝枝好，花比人家别开早。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/97',
+    title: '上太行',
+    author: '于谦',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '西风落日草斑斑，云薄秋空鸟独还。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/98',
+    title: '宿金沙江',
+    author: '杨慎',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '往年曾向嘉陵宿，驿楼东畔阑干曲。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/99',
+    title: '晓征',
+    author: '戚继光',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '霜溪曲曲转旌旗，几许沙鸥睡未知。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/100',
+    title: '养蚕词',
+    author: '高启',
+    dynasty: '明',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '东家西家罢来往，晴日深窗风雨响。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/101',
+    title: '采桑子·谁翻乐府凄凉曲',
+    author: '纳兰性德',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '谁翻乐府凄凉曲？风也萧萧，雨也萧萧，瘦尽灯花又一宵。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/102',
+    title: '采桑子·明月多情应笑我',
+    author: '纳兰性德',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '明月多情应笑我，笑我如今。辜负春心，独自闲行独自吟。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/103',
+    title: '浣溪沙·记绾长条欲别难',
+    author: '纳兰性德',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '记绾长条欲别难，盈盈自此隔银湾。便无风雪也摧残。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/104',
+    title: '菩萨蛮·问君何事轻离别',
+    author: '纳兰性德',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '问君何事轻离别，一年能几团圆月。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/105',
+    title: '遣兴·其二',
+    author: '袁枚',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '但肯寻诗便有诗，灵犀一点是吾师。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/106',
+    title: '论诗五首·其一',
+    author: '赵翼',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '满眼生机转化钧，天工人巧日争新。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/107',
+    title: '遣兴·其一',
+    author: '袁枚',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '爱好由来下笔难，一诗千改始心安。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/108',
+    title: '己亥杂诗·其九十六',
+    author: '龚自珍',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '少年击剑更吹箫，剑气箫心一例消。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/109',
+    title: '都门秋思·其一',
+    author: '黄景仁',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '五剧车声隐若雷，北邙惟见冢千堆。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/110',
+    title: '浣溪沙·十八年来堕世间',
+    author: '纳兰性德',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '十八年来堕世间，吹花嚼蕊弄冰弦。多情情寄阿谁边。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/111',
+    title: '忆少年·飞花时节',
+    author: '朱彝尊',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '飞花时节，垂杨巷陌，东风庭院。重帘尚如昔，但窥帘人远。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/112',
+    title: '题画兰',
+    author: '郑燮',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '身在千山顶上头，突岩深缝妙香稠。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/113',
+    title: '秋柳·其二',
+    author: '王士禛',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '娟娟凉露欲为霜，万缕千条拂玉塘。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/114',
+    title: '夜坐·其一',
+    author: '龚自珍',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '春夜伤心坐画屏，不如放眼入青冥。',
+    tags: ['精校']
+  },
+  {
+    id: 'mingqingshi/115',
+    title: '都门秋思·其二',
+    author: '黄景仁',
+    dynasty: '清',
+    category: 'mingqingshi',
+    categoryName: '明清诗词',
+    content: '侧身人海叹栖迟，浪说文章擅色丝。',
+    tags: ['精校']
+  },
 ]
 
 const activeCategory = ref('all')
@@ -8171,21 +11176,30 @@ const pageNumbers = computed(() => {
   return pages
 })
 
+function scrollToTop() {
+  if (typeof window !== 'undefined') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
+
 function goToPage(page) {
   if (page >= 1 && page <= totalPages.value) {
     currentPage.value = page
+    scrollToTop()
   }
 }
 
 function prevPage() {
   if (currentPage.value > 1) {
     currentPage.value--
+    scrollToTop()
   }
 }
 
 function nextPage() {
   if (currentPage.value < totalPages.value) {
     currentPage.value++
+    scrollToTop()
   }
 }
 
